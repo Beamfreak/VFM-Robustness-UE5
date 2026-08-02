@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative Results Aggregation</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #202124;
+            margin-top: 40px;
+            border-left: 4px solid #1a73e8;
+            padding-left: 10px;
+        }
+        .timestamp {
+            color: #999;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        thead {
+            background: #f8f9fa;
+            border-top: 2px solid #dadce0;
+            border-bottom: 2px solid #dadce0;
+        }
+        th {
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #202124;
+        }
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e8eaed;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .numeric {
+            text-align: right;
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #1a73e8;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #5f6368;
+            text-transform: uppercase;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #202124;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Comparative Results Aggregation</h1>
+        <div class="timestamp">Generated: 2026-06-24 14:50:34</div>
+        
+        <div class="section">
+            <h2>Overview</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-label">Total Models</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Datasets Analyzed</div>
+                    <div class="stat-value">15</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Metrics Tracked</div>
+                    <div class="stat-value">5+</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Master Table (Top 10 Models by Average ImageNet Top-1)</h2>
+        <div class="section">
+            <table>
+<thead>
+<tr>
+<th>Model</th>
+<th>imagenet-1k_Top1</th>
+<th>imagenet-1k_Top5</th>
+<th>imagenet-1k_ECE</th>
+<th>imagenet-1k_ROC</th>
+<th>imagenet-9_Top1</th>
+<th>imagenet-9_Top5</th>
+<th>imagenet-9_ECE</th>
+<th>imagenet-9_ROC</th>
+<th>imagenet-a_Top1</th>
+<th>imagenet-a_Top5</th>
+<th>imagenet-a_ECE</th>
+<th>imagenet-a_ROC</th>
+<th>imagenet-c_Top1</th>
+<th>imagenet-c_Top5</th>
+<th>imagenet-c_ECE</th>
+<th>imagenet-c_ROC</th>
+<th>imagenet-d_Top1</th>
+<th>imagenet-d_Top5</th>
+<th>imagenet-d_ECE</th>
+<th>imagenet-d_ROC</th>
+<th>imagenet-hard_Top1</th>
+<th>imagenet-hard_Top5</th>
+<th>imagenet-hard_ECE</th>
+<th>imagenet-hard_ROC</th>
+<th>imagenet-mini_Top1</th>
+<th>imagenet-mini_Top5</th>
+<th>imagenet-mini_ECE</th>
+<th>imagenet-mini_ROC</th>
+<th>imagenet-r_Top1</th>
+<th>imagenet-r_Top5</th>
+<th>imagenet-r_ECE</th>
+<th>imagenet-r_ROC</th>
+<th>imagenet-sketch_Top1</th>
+<th>imagenet-sketch_Top5</th>
+<th>imagenet-sketch_ECE</th>
+<th>imagenet-sketch_ROC</th>
+<th>imagenet-v2_Top1</th>
+<th>imagenet-v2_Top5</th>
+<th>imagenet-v2_ECE</th>
+<th>imagenet-v2_ROC</th>
+<th>tiny-imagenet_Top1</th>
+<th>tiny-imagenet_Top5</th>
+<th>tiny-imagenet_ECE</th>
+<th>tiny-imagenet_ROC</th>
+<th>normal_dataset_Top1</th>
+<th>normal_dataset_Top5</th>
+<th>normal_dataset_ECE</th>
+<th>normal_dataset_ROC</th>
+<th>plastic_dataset_Top1</th>
+<th>plastic_dataset_Top5</th>
+<th>plastic_dataset_ECE</th>
+<th>plastic_dataset_ROC</th>
+<th>objectnet_Top1</th>
+<th>objectnet_Top5</th>
+<th>objectnet_ECE</th>
+<th>objectnet_ROC</th>
+<th>PUG_ImageNet_Top1</th>
+<th>PUG_ImageNet_Top5</th>
+<th>PUG_ImageNet_ECE</th>
+<th>PUG_ImageNet_ROC</th>
+<th>Avg_Top1</th>
+<th>Avg_Top5</th>
+<th>Avg_ECE</th>
+<th>Avg_ROC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.8380</td>
+<td class="numeric">0.9742</td>
+<td class="numeric">0.7771</td>
+<td class="numeric">0.7750</td>
+<td class="numeric">0.5417</td>
+<td class="numeric">0.6962</td>
+<td class="numeric">0.5078</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">0.2323</td>
+<td class="numeric">0.4946</td>
+<td class="numeric">0.2192</td>
+<td class="numeric">0.6483</td>
+<td class="numeric">0.6559</td>
+<td class="numeric">0.8439</td>
+<td class="numeric">0.6218</td>
+<td class="numeric">0.8407</td>
+<td class="numeric">0.2308</td>
+<td class="numeric">0.5562</td>
+<td class="numeric">0.2170</td>
+<td class="numeric">0.6069</td>
+<td class="numeric">0.2576</td>
+<td class="numeric">0.5474</td>
+<td class="numeric">0.2406</td>
+<td class="numeric">0.7090</td>
+<td class="numeric">0.8666</td>
+<td class="numeric">0.9820</td>
+<td class="numeric">0.8017</td>
+<td class="numeric">0.7763</td>
+<td class="numeric">0.5262</td>
+<td class="numeric">0.7069</td>
+<td class="numeric">0.5022</td>
+<td class="numeric">0.8328</td>
+<td class="numeric">0.5483</td>
+<td class="numeric">0.7858</td>
+<td class="numeric">0.5233</td>
+<td class="numeric">0.7977</td>
+<td class="numeric">0.7373</td>
+<td class="numeric">0.9237</td>
+<td class="numeric">0.6875</td>
+<td class="numeric">0.7910</td>
+<td class="numeric">0.5893</td>
+<td class="numeric">0.7797</td>
+<td class="numeric">0.5655</td>
+<td class="numeric">0.8005</td>
+<td class="numeric">0.2875</td>
+<td class="numeric">0.4625</td>
+<td class="numeric">0.2758</td>
+<td class="numeric">0.8360</td>
+<td class="numeric">0.2612</td>
+<td class="numeric">0.4162</td>
+<td class="numeric">0.2498</td>
+<td class="numeric">0.8429</td>
+<td class="numeric">0.2765</td>
+<td class="numeric">0.4161</td>
+<td class="numeric">0.2607</td>
+<td class="numeric">0.7920</td>
+<td class="numeric">0.4789</td>
+<td class="numeric">0.6502</td>
+<td class="numeric">0.4571</td>
+<td class="numeric">0.8303</td>
+<td class="numeric">0.4885</td>
+<td class="numeric">0.6824</td>
+<td class="numeric">0.4605</td>
+<td class="numeric">0.7852</td>
+</tr>
+<tr>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7805</td>
+<td class="numeric">0.9489</td>
+<td class="numeric">0.7373</td>
+<td class="numeric">0.7633</td>
+<td class="numeric">0.5497</td>
+<td class="numeric">0.7019</td>
+<td class="numeric">0.5237</td>
+<td class="numeric">0.8853</td>
+<td class="numeric">0.5209</td>
+<td class="numeric">0.7371</td>
+<td class="numeric">0.5081</td>
+<td class="numeric">0.7456</td>
+<td class="numeric">0.6871</td>
+<td class="numeric">0.8787</td>
+<td class="numeric">0.6606</td>
+<td class="numeric">0.8046</td>
+<td class="numeric">0.2062</td>
+<td class="numeric">0.5249</td>
+<td class="numeric">0.1975</td>
+<td class="numeric">0.6050</td>
+<td class="numeric">0.2770</td>
+<td class="numeric">0.5708</td>
+<td class="numeric">0.2655</td>
+<td class="numeric">0.6746</td>
+<td class="numeric">0.8134</td>
+<td class="numeric">0.9670</td>
+<td class="numeric">0.7645</td>
+<td class="numeric">0.7665</td>
+<td class="numeric">0.5213</td>
+<td class="numeric">0.7135</td>
+<td class="numeric">0.5059</td>
+<td class="numeric">0.8121</td>
+<td class="numeric">0.5343</td>
+<td class="numeric">0.7836</td>
+<td class="numeric">0.5189</td>
+<td class="numeric">0.7710</td>
+<td class="numeric">0.6826</td>
+<td class="numeric">0.8944</td>
+<td class="numeric">0.6468</td>
+<td class="numeric">0.7825</td>
+<td class="numeric">0.6115</td>
+<td class="numeric">0.8047</td>
+<td class="numeric">0.5919</td>
+<td class="numeric">0.7692</td>
+<td class="numeric">0.3161</td>
+<td class="numeric">0.5554</td>
+<td class="numeric">0.3090</td>
+<td class="numeric">0.7819</td>
+<td class="numeric">0.2681</td>
+<td class="numeric">0.4844</td>
+<td class="numeric">0.2612</td>
+<td class="numeric">0.8220</td>
+<td class="numeric">0.2543</td>
+<td class="numeric">0.4161</td>
+<td class="numeric">0.2433</td>
+<td class="numeric">0.7794</td>
+<td class="numeric">0.4572</td>
+<td class="numeric">0.6431</td>
+<td class="numeric">0.4461</td>
+<td class="numeric">0.8286</td>
+<td class="numeric">0.4987</td>
+<td class="numeric">0.7083</td>
+<td class="numeric">0.4787</td>
+<td class="numeric">0.7728</td>
+</tr>
+<tr>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.8391</td>
+<td class="numeric">0.9754</td>
+<td class="numeric">0.7502</td>
+<td class="numeric">0.7796</td>
+<td class="numeric">0.5588</td>
+<td class="numeric">0.7103</td>
+<td class="numeric">0.5114</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">0.3067</td>
+<td class="numeric">0.5961</td>
+<td class="numeric">0.2931</td>
+<td class="numeric">0.6698</td>
+<td class="numeric">0.6893</td>
+<td class="numeric">0.8772</td>
+<td class="numeric">0.6452</td>
+<td class="numeric">0.8193</td>
+<td class="numeric">0.2068</td>
+<td class="numeric">0.5613</td>
+<td class="numeric">0.1960</td>
+<td class="numeric">0.5674</td>
+<td class="numeric">0.2704</td>
+<td class="numeric">0.5436</td>
+<td class="numeric">0.2534</td>
+<td class="numeric">0.7375</td>
+<td class="numeric">0.8668</td>
+<td class="numeric">0.9840</td>
+<td class="numeric">0.7749</td>
+<td class="numeric">0.7918</td>
+<td class="numeric">0.4361</td>
+<td class="numeric">0.6028</td>
+<td class="numeric">0.4138</td>
+<td class="numeric">0.8447</td>
+<td class="numeric">0.4489</td>
+<td class="numeric">0.6799</td>
+<td class="numeric">0.4288</td>
+<td class="numeric">0.8219</td>
+<td class="numeric">0.7350</td>
+<td class="numeric">0.9266</td>
+<td class="numeric">0.6667</td>
+<td class="numeric">0.7933</td>
+<td class="numeric">0.5826</td>
+<td class="numeric">0.7853</td>
+<td class="numeric">0.5605</td>
+<td class="numeric">0.7970</td>
+<td class="numeric">0.2271</td>
+<td class="numeric">0.4137</td>
+<td class="numeric">0.2194</td>
+<td class="numeric">0.7872</td>
+<td class="numeric">0.2073</td>
+<td class="numeric">0.3933</td>
+<td class="numeric">0.1996</td>
+<td class="numeric">0.7930</td>
+<td class="numeric">0.2613</td>
+<td class="numeric">0.4140</td>
+<td class="numeric">0.2489</td>
+<td class="numeric">0.7904</td>
+<td class="numeric">0.4284</td>
+<td class="numeric">0.6149</td>
+<td class="numeric">0.4108</td>
+<td class="numeric">0.8150</td>
+<td class="numeric">0.4710</td>
+<td class="numeric">0.6719</td>
+<td class="numeric">0.4382</td>
+<td class="numeric">0.7805</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+        <h2>Top Performers by Dataset</h2>
+        <div class="section">
+<h3>PUG_ImageNet</h3>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Model Key</th>
+<th>ImageNet Top-1</th>
+<th>ImageNet Top-5</th>
+<th>ImageNet ECE</th>
+<th>ImageNet ROC AUC</th>
+<th>ImageNet Samples</th>
+<th>Avg Top-1 Across All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="numeric">1</td>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td>clip_b_in1k__linear_probe</td>
+<td class="numeric">0.4789</td>
+<td class="numeric">0.6502</td>
+<td class="numeric">0.4571</td>
+<td class="numeric">0.8303</td>
+<td class="numeric">42,298</td>
+<td class="numeric">0.4885</td>
+</tr>
+<tr>
+<td class="numeric">2</td>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td>dinov2_b_in1k__linear_probe</td>
+<td class="numeric">0.4572</td>
+<td class="numeric">0.6431</td>
+<td class="numeric">0.4461</td>
+<td class="numeric">0.8286</td>
+<td class="numeric">40,380</td>
+<td class="numeric">0.4987</td>
+</tr>
+<tr>
+<td class="numeric">3</td>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td>swin_b_in1k__linear_probe</td>
+<td class="numeric">0.4284</td>
+<td class="numeric">0.6149</td>
+<td class="numeric">0.4108</td>
+<td class="numeric">0.8150</td>
+<td class="numeric">37,837</td>
+<td class="numeric">0.4710</td>
+</tr>
+</tbody>
+</table>
+<h3>imagenet-1k</h3>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Model Key</th>
+<th>ImageNet Top-1</th>
+<th>ImageNet Top-5</th>
+<th>ImageNet ECE</th>
+<th>ImageNet ROC AUC</th>
+<th>ImageNet Samples</th>
+<th>Avg Top-1 Across All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="numeric">1</td>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td>swin_b_in1k__linear_probe</td>
+<td class="numeric">0.8391</td>
+<td class="numeric">0.9754</td>
+<td class="numeric">0.7502</td>
+<td class="numeric">0.7796</td>
+<td class="numeric">8,391</td>
+<td class="numeric">0.4710</td>
+</tr>
+<tr>
+<td class="numeric">2</td>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td>clip_b_in1k__linear_probe</td>
+<td class="numeric">0.8380</td>
+<td class="numeric">0.9742</td>
+<td class="numeric">0.7771</td>
+<td class="numeric">0.7750</td>
+<td class="numeric">8,380</td>
+<td class="numeric">0.4885</td>
+</tr>
+<tr>
+<td class="numeric">3</td>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td>dinov2_b_in1k__linear_probe</td>
+<td class="numeric">0.7805</td>
+<td class="numeric">0.9489</td>
+<td class="numeric">0.7373</td>
+<td class="numeric">0.7633</td>
+<td class="numeric">7,805</td>
+<td class="numeric">0.4987</td>
+</tr>
+</tbody>
+</table>
+<h3>imagenet-9</h3>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Model Key</th>
+<th>ImageNet Top-1</th>
+<th>ImageNet Top-5</th>
+<th>ImageNet ECE</th>
+<th>ImageNet ROC AUC</th>
+<th>ImageNet Samples</th>
+<th>Avg Top-1 Across All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="numeric">1</td>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td>swin_b_in1k__linear_probe</td>
+<td class="numeric">0.5588</td>
+<td class="numeric">0.7103</td>
+<td class="numeric">0.5114</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">18,104</td>
+<td class="numeric">0.4710</td>
+</tr>
+<tr>
+<td class="numeric">2</td>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td>dinov2_b_in1k__linear_probe</td>
+<td class="numeric">0.5497</td>
+<td class="numeric">0.7019</td>
+<td class="numeric">0.5237</td>
+<td class="numeric">0.8853</td>
+<td class="numeric">17,809</td>
+<td class="numeric">0.4987</td>
+</tr>
+<tr>
+<td class="numeric">3</td>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td>clip_b_in1k__linear_probe</td>
+<td class="numeric">0.5417</td>
+<td class="numeric">0.6962</td>
+<td class="numeric">0.5078</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">17,550</td>
+<td class="numeric">0.4885</td>
+</tr>
+</tbody>
+</table>
+<h3>imagenet-a</h3>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Model Key</th>
+<th>ImageNet Top-1</th>
+<th>ImageNet Top-5</th>
+<th>ImageNet ECE</th>
+<th>ImageNet ROC AUC</th>
+<th>ImageNet Samples</th>
+<th>Avg Top-1 Across All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="numeric">1</td>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td>dinov2_b_in1k__linear_probe</td>
+<td class="numeric">0.5209</td>
+<td class="numeric">0.7371</td>
+<td class="numeric">0.5081</td>
+<td class="numeric">0.7456</td>
+<td class="numeric">3,893</td>
+<td class="numeric">0.4987</td>
+</tr>
+<tr>
+<td class="numeric">2</td>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td>swin_b_in1k__linear_probe</td>
+<td class="numeric">0.3067</td>
+<td class="numeric">0.5961</td>
+<td class="numeric">0.2931</td>
+<td class="numeric">0.6698</td>
+<td class="numeric">2,292</td>
+<td class="numeric">0.4710</td>
+</tr>
+<tr>
+<td class="numeric">3</td>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td>clip_b_in1k__linear_probe</td>
+<td class="numeric">0.2323</td>
+<td class="numeric">0.4946</td>
+<td class="numeric">0.2192</td>
+<td class="numeric">0.6483</td>
+<td class="numeric">1,736</td>
+<td class="numeric">0.4885</td>
+</tr>
+</tbody>
+</table>
+<h3>imagenet-c</h3>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Model</th>
+<th>Model Key</th>
+<th>ImageNet Top-1</th>
+<th>ImageNet Top-5</th>
+<th>ImageNet ECE</th>
+<th>ImageNet ROC AUC</th>
+<th>ImageNet Samples</th>
+<th>Avg Top-1 Across All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="numeric">1</td>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td>swin_b_in1k__linear_probe</td>
+<td class="numeric">0.6893</td>
+<td class="numeric">0.8772</td>
+<td class="numeric">0.6452</td>
+<td class="numeric">0.8193</td>
+<td class="numeric">3,274,305</td>
+<td class="numeric">0.4710</td>
+</tr>
+<tr>
+<td class="numeric">2</td>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td>dinov2_b_in1k__linear_probe</td>
+<td class="numeric">0.6871</td>
+<td class="numeric">0.8787</td>
+<td class="numeric">0.6606</td>
+<td class="numeric">0.8046</td>
+<td class="numeric">3,263,798</td>
+<td class="numeric">0.4987</td>
+</tr>
+<tr>
+<td class="numeric">3</td>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td>clip_b_in1k__linear_probe</td>
+<td class="numeric">0.6559</td>
+<td class="numeric">0.8439</td>
+<td class="numeric">0.6218</td>
+<td class="numeric">0.8407</td>
+<td class="numeric">3,115,388</td>
+<td class="numeric">0.4885</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+        <h2>Metric Comparisons</h2>
+        <div class="section">
+<h3>ImageNet ECE</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>imagenet-1k</th>
+<th>imagenet-9</th>
+<th>imagenet-a</th>
+<th>imagenet-c</th>
+<th>imagenet-d</th>
+<th>imagenet-hard</th>
+<th>imagenet-mini</th>
+<th>imagenet-r</th>
+<th>imagenet-sketch</th>
+<th>imagenet-v2</th>
+<th>tiny-imagenet</th>
+<th>normal_dataset</th>
+<th>plastic_dataset</th>
+<th>objectnet</th>
+<th>PUG_ImageNet</th>
+<th>Mean</th>
+<th>Std</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7373</td>
+<td class="numeric">0.5237</td>
+<td class="numeric">0.5081</td>
+<td class="numeric">0.6606</td>
+<td class="numeric">0.1975</td>
+<td class="numeric">0.2655</td>
+<td class="numeric">0.7645</td>
+<td class="numeric">0.5059</td>
+<td class="numeric">0.5189</td>
+<td class="numeric">0.6468</td>
+<td class="numeric">0.5919</td>
+<td class="numeric">0.3090</td>
+<td class="numeric">0.2612</td>
+<td class="numeric">0.2433</td>
+<td class="numeric">0.4461</td>
+<td class="numeric">0.4787</td>
+<td class="numeric">0.1861</td>
+</tr>
+<tr>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7771</td>
+<td class="numeric">0.5078</td>
+<td class="numeric">0.2192</td>
+<td class="numeric">0.6218</td>
+<td class="numeric">0.2170</td>
+<td class="numeric">0.2406</td>
+<td class="numeric">0.8017</td>
+<td class="numeric">0.5022</td>
+<td class="numeric">0.5233</td>
+<td class="numeric">0.6875</td>
+<td class="numeric">0.5655</td>
+<td class="numeric">0.2758</td>
+<td class="numeric">0.2498</td>
+<td class="numeric">0.2607</td>
+<td class="numeric">0.4571</td>
+<td class="numeric">0.4605</td>
+<td class="numeric">0.2066</td>
+</tr>
+<tr>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7502</td>
+<td class="numeric">0.5114</td>
+<td class="numeric">0.2931</td>
+<td class="numeric">0.6452</td>
+<td class="numeric">0.1960</td>
+<td class="numeric">0.2534</td>
+<td class="numeric">0.7749</td>
+<td class="numeric">0.4138</td>
+<td class="numeric">0.4288</td>
+<td class="numeric">0.6667</td>
+<td class="numeric">0.5605</td>
+<td class="numeric">0.2194</td>
+<td class="numeric">0.1996</td>
+<td class="numeric">0.2489</td>
+<td class="numeric">0.4108</td>
+<td class="numeric">0.4382</td>
+<td class="numeric">0.2039</td>
+</tr>
+</tbody>
+</table>
+<h3>ImageNet ROC AUC</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>imagenet-1k</th>
+<th>imagenet-9</th>
+<th>imagenet-a</th>
+<th>imagenet-c</th>
+<th>imagenet-d</th>
+<th>imagenet-hard</th>
+<th>imagenet-mini</th>
+<th>imagenet-r</th>
+<th>imagenet-sketch</th>
+<th>imagenet-v2</th>
+<th>tiny-imagenet</th>
+<th>normal_dataset</th>
+<th>plastic_dataset</th>
+<th>objectnet</th>
+<th>PUG_ImageNet</th>
+<th>Mean</th>
+<th>Std</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7750</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">0.6483</td>
+<td class="numeric">0.8407</td>
+<td class="numeric">0.6069</td>
+<td class="numeric">0.7090</td>
+<td class="numeric">0.7763</td>
+<td class="numeric">0.8328</td>
+<td class="numeric">0.7977</td>
+<td class="numeric">0.7910</td>
+<td class="numeric">0.8005</td>
+<td class="numeric">0.8360</td>
+<td class="numeric">0.8429</td>
+<td class="numeric">0.7920</td>
+<td class="numeric">0.8303</td>
+<td class="numeric">0.7852</td>
+<td class="numeric">0.0771</td>
+</tr>
+<tr>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7796</td>
+<td class="numeric">0.8992</td>
+<td class="numeric">0.6698</td>
+<td class="numeric">0.8193</td>
+<td class="numeric">0.5674</td>
+<td class="numeric">0.7375</td>
+<td class="numeric">0.7918</td>
+<td class="numeric">0.8447</td>
+<td class="numeric">0.8219</td>
+<td class="numeric">0.7933</td>
+<td class="numeric">0.7970</td>
+<td class="numeric">0.7872</td>
+<td class="numeric">0.7930</td>
+<td class="numeric">0.7904</td>
+<td class="numeric">0.8150</td>
+<td class="numeric">0.7805</td>
+<td class="numeric">0.0770</td>
+</tr>
+<tr>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7633</td>
+<td class="numeric">0.8853</td>
+<td class="numeric">0.7456</td>
+<td class="numeric">0.8046</td>
+<td class="numeric">0.6050</td>
+<td class="numeric">0.6746</td>
+<td class="numeric">0.7665</td>
+<td class="numeric">0.8121</td>
+<td class="numeric">0.7710</td>
+<td class="numeric">0.7825</td>
+<td class="numeric">0.7692</td>
+<td class="numeric">0.7819</td>
+<td class="numeric">0.8220</td>
+<td class="numeric">0.7794</td>
+<td class="numeric">0.8286</td>
+<td class="numeric">0.7728</td>
+<td class="numeric">0.0653</td>
+</tr>
+</tbody>
+</table>
+<h3>ImageNet Top-1 Accuracy</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>imagenet-1k</th>
+<th>imagenet-9</th>
+<th>imagenet-a</th>
+<th>imagenet-c</th>
+<th>imagenet-d</th>
+<th>imagenet-hard</th>
+<th>imagenet-mini</th>
+<th>imagenet-r</th>
+<th>imagenet-sketch</th>
+<th>imagenet-v2</th>
+<th>tiny-imagenet</th>
+<th>normal_dataset</th>
+<th>plastic_dataset</th>
+<th>objectnet</th>
+<th>PUG_ImageNet</th>
+<th>Mean</th>
+<th>Std</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DINOv2-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.7805</td>
+<td class="numeric">0.5497</td>
+<td class="numeric">0.5209</td>
+<td class="numeric">0.6871</td>
+<td class="numeric">0.2062</td>
+<td class="numeric">0.2770</td>
+<td class="numeric">0.8134</td>
+<td class="numeric">0.5213</td>
+<td class="numeric">0.5343</td>
+<td class="numeric">0.6826</td>
+<td class="numeric">0.6115</td>
+<td class="numeric">0.3161</td>
+<td class="numeric">0.2681</td>
+<td class="numeric">0.2543</td>
+<td class="numeric">0.4572</td>
+<td class="numeric">0.4987</td>
+<td class="numeric">0.1978</td>
+</tr>
+<tr>
+<td>CLIP-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.8380</td>
+<td class="numeric">0.5417</td>
+<td class="numeric">0.2323</td>
+<td class="numeric">0.6559</td>
+<td class="numeric">0.2308</td>
+<td class="numeric">0.2576</td>
+<td class="numeric">0.8666</td>
+<td class="numeric">0.5262</td>
+<td class="numeric">0.5483</td>
+<td class="numeric">0.7373</td>
+<td class="numeric">0.5893</td>
+<td class="numeric">0.2875</td>
+<td class="numeric">0.2612</td>
+<td class="numeric">0.2765</td>
+<td class="numeric">0.4789</td>
+<td class="numeric">0.4885</td>
+<td class="numeric">0.2229</td>
+</tr>
+<tr>
+<td>Swin-B-IN1K-LINEAR_PROBE</td>
+<td class="numeric">0.8391</td>
+<td class="numeric">0.5588</td>
+<td class="numeric">0.3067</td>
+<td class="numeric">0.6893</td>
+<td class="numeric">0.2068</td>
+<td class="numeric">0.2704</td>
+<td class="numeric">0.8668</td>
+<td class="numeric">0.4361</td>
+<td class="numeric">0.4489</td>
+<td class="numeric">0.7350</td>
+<td class="numeric">0.5826</td>
+<td class="numeric">0.2271</td>
+<td class="numeric">0.2073</td>
+<td class="numeric">0.2613</td>
+<td class="numeric">0.4284</td>
+<td class="numeric">0.4710</td>
+<td class="numeric">0.2304</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+        
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #dadce0;">
+        <p style="color: #999; font-size: 12px;">
+            For detailed comparisons, see CSV files in the aggregate folder.
+        </p>
+    </div>
+</body>
+</html>

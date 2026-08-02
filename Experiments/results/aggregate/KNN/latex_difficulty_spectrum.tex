@@ -1,0 +1,28 @@
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Dataset} & \textbf{Mean Acc. (\%)} & \textbf{Min Acc. (\%)} & \textbf{Max Acc. (\%)} & \textbf{Best Model} \\
+\midrule
+imagenet-1k & 79.66\% & 67.13\% & 87.53\% & CLIP-L-IN1K-KNN \\
+imagenet-mini & 78.21\% & 5.38\% & 88.86\% & CLIP-L-IN1K-KNN \\
+imagenet-c & 77.94\% & 44.54\% & 96.24\% & DINOv3-L-KNN \\
+imagenet-v2 & 67.11\% & 52.63\% & 77.72\% & CLIP-L-IN1K-KNN \\
+imagenet-9 & 59.11\% & 43.85\% & 70.97\% & DINOv3-L-KNN \\
+tiny-imagenet & 51.35\% & 24.44\% & 70.55\% & DINOv3-L-KNN \\
+imagenet-hard & 45.61\% & 19.52\% & 57.62\% & DINOv3-L-KNN \\
+Avg & 45.51\% & 25.54\% & 61.24\% & DINOv3-L-KNN \\
+imagenet-sketch & 41.47\% & 20.61\% & 65.43\% & DINOv3-L-KNN \\
+imagenet-r & 41.47\% & 21.57\% & 71.71\% & DINOv3-L-KNN \\
+PUG\_ImageNet & 37.46\% & 19.91\% & 56.57\% & DINOv3-L-KNN \\
+imagenet-a & 26.57\% & 2.07\% & 62.21\% & DINOv2-L-KNN \\
+objectnet & 21.75\% & 8.04\% & 35.05\% & DINOv3-L-KNN \\
+normal\_dataset & 21.35\% & 7.32\% & 38.60\% & DINOv2-L-KNN \\
+plastic\_dataset & 18.99\% & 6.97\% & 36.63\% & DINOv3-L-KNN \\
+imagenet-d & 14.52\% & 6.18\% & 25.44\% & CLIP-L-IN1K-KNN \\
+\bottomrule
+\end{tabular}
+\caption{Robustness benchmarks ordered by difficulty (mean Top-1 accuracy across all 28 models). Our synthetic datasets rank among the most challenging benchmarks alongside ObjectNet.}
+\label{tab:dataset_difficulty_spectrum}
+\end{table}
