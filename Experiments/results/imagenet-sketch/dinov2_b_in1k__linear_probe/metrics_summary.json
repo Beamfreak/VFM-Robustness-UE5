@@ -1,0 +1,159 @@
+{
+  "model_key": "dinov2_b_in1k__linear_probe",
+  "model_name": "DINOv2-B-IN1K-LINEAR_PROBE",
+  "generated_at": "2026-06-19T11:56:22.319047",
+  "metrics": {
+    "summary": {
+      "total_samples": 50889,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.5342804928373519,
+        "top5_accuracy": 0.7835681581481263,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 27189,
+        "top5_correct": 39875,
+        "ece": 0.5189154959340155,
+        "roc_auc": 0.7709860046714723
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 50889,
+      "top1_accuracy": 0.5342804928373519,
+      "top1_accuracy_ci": {
+        "lower": 0.5299465517235117,
+        "upper": 0.5386144339511921,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.7835681581481263,
+      "top5_accuracy_ci": {
+        "lower": 0.7799902012880141,
+        "upper": 0.7871461150082385,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.4657195071626481,
+      "top5_error_rate": 0.2164318418518737,
+      "expected_calibration_error": 0.5189154959340155,
+      "roc_auc_misclassification": 0.7709860046714723,
+      "top_confused_pairs": [
+        {
+          "true_class": 400,
+          "predicted_class": 667,
+          "count": 49
+        },
+        {
+          "true_class": 486,
+          "predicted_class": 889,
+          "count": 49
+        },
+        {
+          "true_class": 320,
+          "predicted_class": 319,
+          "count": 47
+        },
+        {
+          "true_class": 513,
+          "predicted_class": 566,
+          "count": 47
+        },
+        {
+          "true_class": 665,
+          "predicted_class": 670,
+          "count": 47
+        },
+        {
+          "true_class": 837,
+          "predicted_class": 836,
+          "count": 47
+        },
+        {
+          "true_class": 842,
+          "predicted_class": 608,
+          "count": 47
+        },
+        {
+          "true_class": 49,
+          "predicted_class": 50,
+          "count": 45
+        },
+        {
+          "true_class": 987,
+          "predicted_class": 998,
+          "count": 45
+        },
+        {
+          "true_class": 515,
+          "predicted_class": 808,
+          "count": 44
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx               class_label  support  ...  tp  fp  fn\n354        354             Arabian_camel       51  ...  51   0   0\n396        396                  lionfish       51  ...  50   0   1\n340        340                     zebra       51  ...  51   2   0\n339        339                    sorrel       51  ...  49   1   2\n723        723                  pinwheel       51  ...  48   0   3\n..         ...                       ...      ...  ...  ..  ..  ..\n40          40        American_chameleon       51  ...   0   0  51\n41          41                  whiptail       51  ...   0   0  51\n25          25  European_fire_salamander       51  ...   0   0  51\n27          27                       eft       51  ...   0   0  51\n998        998                       ear       51  ...   0  46  51\n\n[1000 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 50889,
+          "imagenet_top1_acc": 0.5342804928373519,
+          "imagenet_top5_acc": 0.7835681581481263,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 50889,
+          "imagenet_top1_acc": 0.5342804928373519,
+          "imagenet_top5_acc": 0.7835681581481263,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}
