@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Report: CLIP-B-KNN</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #202124;
+            margin-top: 30px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #1a73e8;
+        }
+        .metric-card h3 {
+            margin: 0 0 10px 0;
+            color: #5f6368;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .metric-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #202124;
+        }
+        .metric-value.good { color: #34a853; }
+        .metric-value.warning { color: #fbbc04; }
+        .metric-value.bad { color: #ea4335; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e8eaed;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e8eaed;
+            color: #5f6368;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Evaluation Report: CLIP-B-KNN</h1>
+        <p>Generated: 2026-05-13 09:13:52</p>
+        
+        <h2>Executive Summary</h2>
+        <div class="summary-grid">
+            <div class="metric-card">
+                <h3>Total Samples</h3>
+                <div class="metric-value">88,328</div>
+            </div>
+            <div class="metric-card">
+                <h3>ImageNet Base Top-1</h3>
+                <div class="metric-value bad">0.0%</div>
+            </div>
+            <div class="metric-card">
+                <h3>ImageNet Top-1 Accuracy</h3>
+                <div class="metric-value bad">26.2%</div>
+            </div>
+            <div class="metric-card">
+                <h3>ImageNet Top-5 Accuracy</h3>
+                <div class="metric-value warning">40.6%</div>
+            </div>
+            <div class="metric-card">
+                <h3>ShapeNet Base Top-1</h3>
+                <div class="metric-value bad">0.0%</div>
+            </div>
+            <div class="metric-card">
+                <h3>ShapeNet Top-1 Accuracy</h3>
+                <div class="metric-value bad">0.0%</div>
+            </div>
+        </div>
+        
+        <h2>ImageNet Performance</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Top-1 Accuracy</td><td>0.2618</td></tr>
+            <tr><td>Top-5 Accuracy</td><td>0.4064</td></tr>
+            <tr><td>Correct (Top-1)</td><td>23,125</td></tr>
+            <tr><td>Correct (Top-5)</td><td>35,898</td></tr>
+            <tr><td>Expected Calibration Error</td><td>0.0523</td></tr>
+            <tr><td>ROC AUC</td><td>0.8656</td></tr>
+        </table>
+        
+        <h2>ShapeNet Superclass Performance</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Evaluable Samples</td><td>0</td></tr>
+            <tr><td>Coverage</td><td>0.0%</td></tr>
+            <tr><td>Top-1 Accuracy</td><td>0.0000</td></tr>
+            <tr><td>Correct</td><td>0</td></tr>
+            <tr><td>Expected Calibration Error</td><td>nan</td></tr>
+            <tr><td>ROC AUC</td><td>nan</td></tr>
+        </table>
+        
+        <h2>Stratified Analysis</h2>
+<h3>Camera Position</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td>Pitch:0_Yaw:0_Roll:0</td><td>76020</td><td>26.6%</td><td>N/A</td></tr>
+<tr><td>Pitch:0_Yaw:135_Roll:0</td><td>724</td><td>27.6%</td><td>N/A</td></tr>
+<tr><td>Pitch:0_Yaw:180_Roll:0</td><td>724</td><td>25.7%</td><td>N/A</td></tr>
+<tr><td>Pitch:0_Yaw:225_Roll:0</td><td>724</td><td>30.2%</td><td>N/A</td></tr>
+<tr><td>Pitch:0_Yaw:270_Roll:0</td><td>724</td><td>27.9%</td><td>N/A</td></tr>
+<tr><td>Pitch:0_Yaw:45_Roll:0</td><td>724</td><td>38.5%</td><td>N/A</td></tr>
+<tr><td>Pitch:240_Yaw:0_Roll:0</td><td>724</td><td>3.9%</td><td>N/A</td></tr>
+<tr><td>Pitch:260_Yaw:0_Roll:0</td><td>724</td><td>6.8%</td><td>N/A</td></tr>
+<tr><td>Pitch:280_Yaw:0_Roll:0</td><td>724</td><td>10.5%</td><td>N/A</td></tr>
+<tr><td>Pitch:300_Yaw:0_Roll:0</td><td>724</td><td>21.8%</td><td>N/A</td></tr>
+<tr><td colspan='4'>... and 8 more groups</td></tr>
+</table>
+<h3>Fog</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td><unmapped></td><td>88328</td><td>26.2%</td><td>N/A</td></tr>
+</table>
+<h3>Light Color (RGB)</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td>Default</td><td>83260</td><td>27.0%</td><td>N/A</td></tr>
+<tr><td>0,0,255,0</td><td>724</td><td>6.8%</td><td>N/A</td></tr>
+<tr><td>0,255,255,0</td><td>724</td><td>13.0%</td><td>N/A</td></tr>
+<tr><td>0,255,0,0</td><td>724</td><td>9.5%</td><td>N/A</td></tr>
+<tr><td>255,0,0,0</td><td>724</td><td>7.2%</td><td>N/A</td></tr>
+<tr><td>255,0,255,0</td><td>724</td><td>8.7%</td><td>N/A</td></tr>
+<tr><td>255,255,0,0</td><td>724</td><td>17.7%</td><td>N/A</td></tr>
+<tr><td>255,255,255,0</td><td>724</td><td>22.7%</td><td>N/A</td></tr>
+</table>
+<h3>Material</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td>Default</td><td>82536</td><td>26.8%</td><td>N/A</td></tr>
+<tr><td>Black</td><td>724</td><td>14.0%</td><td>N/A</td></tr>
+<tr><td>Color</td><td>724</td><td>14.0%</td><td>N/A</td></tr>
+<tr><td>Curtain</td><td>724</td><td>15.6%</td><td>N/A</td></tr>
+<tr><td>Grass</td><td>724</td><td>15.1%</td><td>N/A</td></tr>
+<tr><td>Gray</td><td>724</td><td>21.7%</td><td>N/A</td></tr>
+<tr><td>Green</td><td>724</td><td>24.0%</td><td>N/A</td></tr>
+<tr><td>Red</td><td>724</td><td>19.3%</td><td>N/A</td></tr>
+<tr><td>Sky</td><td>724</td><td>20.2%</td><td>N/A</td></tr>
+</table>
+<h3>Object</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td>0025c5e2333949feb1db259d4ff08dbe</td><td>122</td><td>84.4%</td><td>N/A</td></tr>
+<tr><td>008c5e7b77f74be99e41cfdf04fbde0d</td><td>122</td><td>20.5%</td><td>N/A</td></tr>
+<tr><td>00fd99e778c244c3bd3b65f99dad7cb2</td><td>122</td><td>8.2%</td><td>N/A</td></tr>
+<tr><td>0307b598bb7246748e0112107e495ac4</td><td>122</td><td>18.0%</td><td>N/A</td></tr>
+<tr><td>037b03a3e0274279be4b93b7c7cedf01</td><td>122</td><td>31.1%</td><td>N/A</td></tr>
+<tr><td>046e3307c74746a58ec4bea5b33b7b97</td><td>122</td><td>50.0%</td><td>N/A</td></tr>
+<tr><td>04eae2077ed74f5fadde91ffb46b2085</td><td>122</td><td>0.0%</td><td>N/A</td></tr>
+<tr><td>05590035d2954909ab287208a42da45a</td><td>122</td><td>0.8%</td><td>N/A</td></tr>
+<tr><td>05ada823740f461c94456a68f1146ee2</td><td>122</td><td>4.1%</td><td>N/A</td></tr>
+<tr><td>05eb4a68e56249c5b3db4ea937a57b6e</td><td>122</td><td>83.6%</td><td>N/A</td></tr>
+<tr><td colspan='4'>... and 714 more groups</td></tr>
+</table>
+<h3>Level</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td><unmapped></td><td>88328</td><td>26.2%</td><td>N/A</td></tr>
+</table>
+<h3>true_shapenet_superclass</h3>
+<table>
+<tr><th>Value</th><th>N</th><th>ImageNet Top-1</th><th>ShapeNet Top-1</th></tr>
+<tr><td><unmapped></td><td>88328</td><td>26.2%</td><td>N/A</td></tr>
+</table>
+        
+        <div class="footer">
+            <p>Model: vit_base_patch16_clip_224.openai</p>
+            <p>Report generated by Vision Model Evaluation Framework</p>
+        </div>
+    </div>
+</body>
+</html>
