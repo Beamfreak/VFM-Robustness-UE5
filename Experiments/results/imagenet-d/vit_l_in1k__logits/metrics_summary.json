@@ -1,0 +1,159 @@
+{
+  "model_key": "vit_l_in1k__logits",
+  "model_name": "ViT-L-IN1K-LOGITS",
+  "generated_at": "2026-06-05T01:25:50.275736",
+  "metrics": {
+    "summary": {
+      "total_samples": 4835,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.16339193381592554,
+        "top5_accuracy": 0.46804550155118924,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 790,
+        "top5_correct": 2263,
+        "ece": 0.3803735174831955,
+        "roc_auc": 0.6249329536386538
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 4835,
+      "top1_accuracy": 0.16339193381592554,
+      "top1_accuracy_ci": {
+        "lower": 0.15243019648397105,
+        "upper": 0.17435367114788003,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.46804550155118924,
+      "top5_accuracy_ci": {
+        "lower": 0.45377456049638054,
+        "upper": 0.4816959669079628,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.8366080661840745,
+      "top5_error_rate": 0.5319544984488107,
+      "expected_calibration_error": 0.3803735174831955,
+      "roc_auc_misclassification": 0.6249329536386538,
+      "top_confused_pairs": [
+        {
+          "true_class": 700,
+          "predicted_class": 999,
+          "count": 94
+        },
+        {
+          "true_class": 720,
+          "predicted_class": 898,
+          "count": 69
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 59
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 792,
+          "count": 32
+        },
+        {
+          "true_class": 792,
+          "predicted_class": 731,
+          "count": 28
+        },
+        {
+          "true_class": 703,
+          "predicted_class": 831,
+          "count": 27
+        },
+        {
+          "true_class": 792,
+          "predicted_class": 462,
+          "count": 26
+        },
+        {
+          "true_class": 923,
+          "predicted_class": 868,
+          "count": 25
+        },
+        {
+          "true_class": 703,
+          "predicted_class": 894,
+          "count": 23
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 412,
+          "count": 23
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "    class_idx                             class_label  support  base_accuracy  overall_accuracy  precision    recall        f1   tp  fp   fn\n25        543                                dumbbell        1            NaN          1.000000   0.500000  1.000000  0.666667    1   1    0\n72        783                                   screw       43            NaN          0.488372   0.777778  0.488372  0.600000   21   6   22\n29        567             frying pan, frypan, skillet       82            NaN          0.475610   0.619048  0.475610  0.537931   39  24   43\n40        623  letter opener, paper knife, paperknife       23            NaN          0.521739   0.545455  0.521739  0.533333   12  10   11\n54        700                             paper towel      356            NaN          0.286517   0.953271  0.286517  0.440605  102   5  254\n..        ...                                     ...      ...            ...               ...        ...       ...       ...  ...  ..  ...\n42        629                     lipstick, lip rouge       38            NaN          0.000000   0.000000  0.000000  0.000000    0   1   38\n45        644                              matchstick        3            NaN          0.000000   0.000000  0.000000  0.000000    0  14    3\n81        834                   suit, suit of clothes        4            NaN          0.000000   0.000000  0.000000  0.000000    0   3    4\n85        849                                  teapot        4            NaN          0.000000   0.000000  0.000000  0.000000    0   5    4\n99        951                                   lemon       27            NaN          0.000000   0.000000  0.000000  0.000000    0   0   27\n\n[103 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.16339193381592554,
+          "imagenet_top5_acc": 0.46804550155118924,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.16339193381592554,
+          "imagenet_top5_acc": 0.46804550155118924,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

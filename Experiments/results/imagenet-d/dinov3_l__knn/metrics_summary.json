@@ -1,0 +1,159 @@
+{
+  "model_key": "dinov3_l__knn",
+  "model_name": "DINOv3-L-KNN",
+  "generated_at": "2026-06-05T01:14:23.069802",
+  "metrics": {
+    "summary": {
+      "total_samples": 4835,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.2095139607032058,
+        "top5_accuracy": 0.4359875904860393,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 1013,
+        "top5_correct": 2108,
+        "ece": 0.28156029504512925,
+        "roc_auc": 0.6108036653798887
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 4835,
+      "top1_accuracy": 0.2095139607032058,
+      "top1_accuracy_ci": {
+        "lower": 0.19854705274043433,
+        "upper": 0.22171664943123062,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.4359875904860393,
+      "top5_accuracy_ci": {
+        "lower": 0.42212512926577045,
+        "upper": 0.4500517063081696,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.7904860392967942,
+      "top5_error_rate": 0.5640124095139607,
+      "expected_calibration_error": 0.28156029504512925,
+      "roc_auc_misclassification": 0.6108036653798887,
+      "top_confused_pairs": [
+        {
+          "true_class": 700,
+          "predicted_class": 999,
+          "count": 88
+        },
+        {
+          "true_class": 720,
+          "predicted_class": 898,
+          "count": 57
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 40
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 791,
+          "count": 34
+        },
+        {
+          "true_class": 720,
+          "predicted_class": 680,
+          "count": 30
+        },
+        {
+          "true_class": 792,
+          "predicted_class": 813,
+          "count": 28
+        },
+        {
+          "true_class": 923,
+          "predicted_class": 729,
+          "count": 23
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 792,
+          "count": 23
+        },
+        {
+          "true_class": 923,
+          "predicted_class": 868,
+          "count": 22
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 412,
+          "count": 21
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "    class_idx                                        class_label  support  base_accuracy  overall_accuracy  precision    recall        f1  tp  fp  fn\n72        783                                              screw       43            NaN          0.790698       0.85  0.790698  0.819277  34   6   9\n65        759                                      reflex camera        8            NaN          0.625000       1.00  0.625000  0.769231   5   0   3\n33        589  hand blower, blow dryer, blow drier, hair drye...        9            NaN          0.555556       1.00  0.555556  0.714286   5   0   4\n20        508                          computer keyboard, keypad        1            NaN          1.000000       0.50  1.000000  0.666667   1   1   0\n77        806                                               sock       12            NaN          0.500000       1.00  0.500000  0.666667   6   0   6\n..        ...                                                ...      ...            ...               ...        ...       ...       ...  ..  ..  ..\n48        659                                        mixing bowl       10            NaN          0.000000       0.00  0.000000  0.000000   0  17  10\n81        834                              suit, suit of clothes        4            NaN          0.000000       0.00  0.000000  0.000000   0   1   4\n82        837                   sunglasses, dark glasses, shades        5            NaN          0.000000       0.00  0.000000  0.000000   0   0   5\n75        797                                       sleeping bag        5            NaN          0.000000       0.00  0.000000  0.000000   0   5   5\n87        851                      television, television system       35            NaN          0.000000       0.00  0.000000  0.000000   0  21  35\n\n[103 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.2095139607032058,
+          "imagenet_top5_acc": 0.4359875904860393,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.2095139607032058,
+          "imagenet_top5_acc": 0.4359875904860393,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

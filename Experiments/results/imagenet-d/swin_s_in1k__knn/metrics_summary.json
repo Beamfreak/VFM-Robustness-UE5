@@ -1,0 +1,159 @@
+{
+  "model_key": "swin_s_in1k__knn",
+  "model_name": "Swin-S-IN1K-KNN",
+  "generated_at": "2026-06-05T00:16:29.354135",
+  "metrics": {
+    "summary": {
+      "total_samples": 4835,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.1809720785935884,
+        "top5_accuracy": 0.40227507755946224,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 875,
+        "top5_correct": 1945,
+        "ece": 0.34308484822295937,
+        "roc_auc": 0.5810249639249639
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 4835,
+      "top1_accuracy": 0.1809720785935884,
+      "top1_accuracy_ci": {
+        "lower": 0.1704239917269907,
+        "upper": 0.19173216132368148,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.40227507755946224,
+      "top5_accuracy_ci": {
+        "lower": 0.3884126163391934,
+        "upper": 0.41551706308169595,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.8190279214064116,
+      "top5_error_rate": 0.5977249224405378,
+      "expected_calibration_error": 0.34308484822295937,
+      "roc_auc_misclassification": 0.5810249639249639,
+      "top_confused_pairs": [
+        {
+          "true_class": 720,
+          "predicted_class": 898,
+          "count": 68
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 58
+        },
+        {
+          "true_class": 703,
+          "predicted_class": 831,
+          "count": 43
+        },
+        {
+          "true_class": 703,
+          "predicted_class": 894,
+          "count": 37
+        },
+        {
+          "true_class": 700,
+          "predicted_class": 999,
+          "count": 36
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 894,
+          "count": 34
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 792,
+          "count": 31
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 791,
+          "count": 26
+        },
+        {
+          "true_class": 651,
+          "predicted_class": 851,
+          "count": 25
+        },
+        {
+          "true_class": 923,
+          "predicted_class": 729,
+          "count": 24
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "    class_idx                    class_label  support  base_accuracy  overall_accuracy  precision    recall        f1   tp  fp   fn\n54        700                    paper towel      356            NaN          0.558989   0.938679  0.558989  0.700704  199  13  157\n72        783                          screw       43            NaN          0.511628   0.846154  0.511628  0.637681   22   4   21\n58        725                  pitcher, ewer       67            NaN          0.492537   0.891892  0.492537  0.634615   33   4   34\n66        761         remote control, remote        5            NaN          0.800000   0.500000  0.800000  0.615385    4   4    1\n3         419                       Band Aid       96            NaN          0.395833   0.950000  0.395833  0.558824   38   2   58\n..        ...                            ...      ...            ...               ...        ...       ...       ...  ...  ..  ...\n75        797                   sleeping bag        5            NaN          0.000000   0.000000  0.000000  0.000000    0  17    5\n91        882         vacuum, vacuum cleaner        3            NaN          0.000000   0.000000  0.000000  0.000000    0   3    3\n87        851  television, television system       35            NaN          0.000000   0.000000  0.000000  0.000000    0  29   35\n97        923                          plate      256            NaN          0.000000   0.000000  0.000000  0.000000    0   0  256\n99        951                          lemon       27            NaN          0.000000   0.000000  0.000000  0.000000    0   1   27\n\n[103 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.1809720785935884,
+          "imagenet_top5_acc": 0.40227507755946224,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.1809720785935884,
+          "imagenet_top5_acc": 0.40227507755946224,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "model_key": "hiera_l_in1k__logits",
+  "model_name": "Hiera_L-IN1K-LOGITS",
+  "generated_at": "2026-06-05T01:30:03.471869",
+  "metrics": {
+    "summary": {
+      "total_samples": 4835,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.22771458117890384,
+        "top5_accuracy": 0.5975180972078593,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 1101,
+        "top5_correct": 2889,
+        "ece": 0.2880143805644874,
+        "roc_auc": 0.5582795403895859
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 4835,
+      "top1_accuracy": 0.22771458117890384,
+      "top1_accuracy_ci": {
+        "lower": 0.21592554291623578,
+        "upper": 0.23971044467425026,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.5975180972078593,
+      "top5_accuracy_ci": {
+        "lower": 0.5834488107549121,
+        "upper": 0.6111737331954499,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.7722854188210961,
+      "top5_error_rate": 0.4024819027921407,
+      "expected_calibration_error": 0.2880143805644874,
+      "roc_auc_misclassification": 0.5582795403895859,
+      "top_confused_pairs": [
+        {
+          "true_class": 700,
+          "predicted_class": 999,
+          "count": 115
+        },
+        {
+          "true_class": 720,
+          "predicted_class": 898,
+          "count": 92
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 67
+        },
+        {
+          "true_class": 703,
+          "predicted_class": 831,
+          "count": 53
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 792,
+          "count": 38
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 412,
+          "count": 30
+        },
+        {
+          "true_class": 773,
+          "predicted_class": 898,
+          "count": 29
+        },
+        {
+          "true_class": 792,
+          "predicted_class": 462,
+          "count": 28
+        },
+        {
+          "true_class": 923,
+          "predicted_class": 868,
+          "count": 25
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 791,
+          "count": 20
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx                                        class_label  support  base_accuracy  overall_accuracy  precision    recall        f1  tp  fp  fn\n14         473                             can opener, tin opener        1            NaN          1.000000   1.000000  1.000000  1.000000   1   0   0\n53         696                                         paintbrush       78            NaN          0.589744   0.821429  0.589744  0.686567  46  10  32\n58         725                                      pitcher, ewer       67            NaN          0.567164   0.844444  0.567164  0.678571  38   7  29\n72         783                                              screw       43            NaN          0.581395   0.806452  0.581395  0.675676  25   6  18\n100        954                                             banana        7            NaN          0.428571   1.000000  0.428571  0.600000   3   0   4\n..         ...                                                ...      ...            ...               ...        ...       ...       ...  ..  ..  ..\n48         659                                        mixing bowl       10            NaN          0.000000   0.000000  0.000000  0.000000   0  30  10\n43         630                                             Loafer        6            NaN          0.000000   0.000000  0.000000  0.000000   0   1   6\n44         632  loudspeaker, speaker, speaker unit, loudspeake...       15            NaN          0.000000   0.000000  0.000000  0.000000   0   8  15\n86         850                                  teddy, teddy bear        2            NaN          0.000000   0.000000  0.000000  0.000000   0   1   2\n81         834                              suit, suit of clothes        4            NaN          0.000000   0.000000  0.000000  0.000000   0   1   4\n\n[103 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.22771458117890384,
+          "imagenet_top5_acc": 0.5975180972078593,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.22771458117890384,
+          "imagenet_top5_acc": 0.5975180972078593,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

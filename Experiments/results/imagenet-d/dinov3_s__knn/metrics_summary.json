@@ -1,0 +1,159 @@
+{
+  "model_key": "dinov3_s__knn",
+  "model_name": "DINOv3-S-KNN",
+  "generated_at": "2026-06-05T00:14:17.849622",
+  "metrics": {
+    "summary": {
+      "total_samples": 4835,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.09120992761116856,
+        "top5_accuracy": 0.28914167528438467,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 441,
+        "top5_correct": 1398,
+        "ece": 0.27299915801313823,
+        "roc_auc": 0.5463990785208029
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 4835,
+      "top1_accuracy": 0.09120992761116856,
+      "top1_accuracy_ci": {
+        "lower": 0.08335056876938987,
+        "upper": 0.09968976215098242,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.28914167528438467,
+      "top5_accuracy_ci": {
+        "lower": 0.2765253360910031,
+        "upper": 0.3017580144777663,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.9087900723888315,
+      "top5_error_rate": 0.7108583247156153,
+      "expected_calibration_error": 0.27299915801313823,
+      "roc_auc_misclassification": 0.5463990785208029,
+      "top_confused_pairs": [
+        {
+          "true_class": 700,
+          "predicted_class": 999,
+          "count": 73
+        },
+        {
+          "true_class": 720,
+          "predicted_class": 898,
+          "count": 45
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 37
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 791,
+          "count": 32
+        },
+        {
+          "true_class": 651,
+          "predicted_class": 851,
+          "count": 28
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 910,
+          "count": 23
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 790,
+          "count": 18
+        },
+        {
+          "true_class": 588,
+          "predicted_class": 894,
+          "count": 18
+        },
+        {
+          "true_class": 567,
+          "predicted_class": 828,
+          "count": 18
+        },
+        {
+          "true_class": 813,
+          "predicted_class": 792,
+          "count": 18
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx                class_label  support  base_accuracy  overall_accuracy  precision    recall        f1  tp  fp   fn\n72         783                      screw       43            NaN          0.651163   0.736842  0.651163  0.691358  28  10   15\n68         770               running shoe       13            NaN          0.538462   0.875000  0.538462  0.666667   7   1    6\n20         508  computer keyboard, keypad        1            NaN          1.000000   0.500000  1.000000  0.666667   1   1    0\n58         725              pitcher, ewer       67            NaN          0.313433   0.600000  0.313433  0.411765  21  14   46\n6          440                beer bottle       13            NaN          0.230769   0.750000  0.230769  0.352941   3   1   10\n..         ...                        ...      ...            ...               ...        ...       ...       ...  ..  ..  ...\n89         868                       tray      122            NaN          0.000000   0.000000  0.000000  0.000000   0   5  122\n97         923                      plate      256            NaN          0.000000   0.000000  0.000000  0.000000   0   0  256\n96         909                        wok       63            NaN          0.000000   0.000000  0.000000  0.000000   0   5   63\n99         951                      lemon       27            NaN          0.000000   0.000000  0.000000  0.000000   0   0   27\n101        968                        cup       19            NaN          0.000000   0.000000  0.000000  0.000000   0  47   19\n\n[103 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [],
+      "Fog": [],
+      "Light Color (RGB)": [],
+      "Material": [],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.09120992761116856,
+          "imagenet_top5_acc": 0.28914167528438467,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 4835,
+          "imagenet_top1_acc": 0.09120992761116856,
+          "imagenet_top5_acc": 0.28914167528438467,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}
