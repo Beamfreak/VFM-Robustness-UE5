@@ -30,18 +30,15 @@ We introduce two novel synthetic benchmarks with perfect causal granularity:
 - Top-down viewpoints represent a universal failure mode across all evaluated backbones.
 - Supervised fine-tuning often destroys the latent invariance of pre-trained backbones, making linear probing a more reliable metric for OOD robustness.
 
-## Usage
-
-(Optional: Add brief instructions on how to run the evaluation scripts or access the UE5 plugin.)
 
 ## Citation
 
 If you use this pipeline or dataset in your research, please cite:
 
 ```bibtex
-@masterthesis{yourname2025robustness,
+@masterthesis{leinberger2026robustness,
   title={Evaluating the Robustness of Vision Foundation Models on an ImageNet Class-Subset Using Photorealistic Images Synthesized in Unreal Engine},
-  author={Your Name},
-  year={2025},
-  school={Your University}
+  author={Markus Leinberger},
+  year={2026},
+  school={University of Bamberg}
 }
