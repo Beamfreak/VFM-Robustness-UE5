@@ -1,0 +1,2559 @@
+{
+  "model_key": "vit_l_in1k__knn",
+  "model_name": "ViT-L-IN1K-KNN",
+  "generated_at": "2026-06-02T19:49:52.080522",
+  "metrics": {
+    "summary": {
+      "total_samples": 7993,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.16889778556236706,
+        "top5_accuracy": 0.2968847741774052,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 1350,
+        "top5_correct": 2373,
+        "ece": 0.18756446921395134,
+        "roc_auc": 0.7867148934272221
+      },
+      "shapenet": {
+        "evaluable_samples": 7444,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 93.13149005379707,
+        "top1_accuracy": 0.2243417517463729,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 1670,
+        "ece": 0.13542504427671304,
+        "roc_auc": 0.7735291280964224
+      }
+    },
+    "imagenet": {
+      "n_samples": 7993,
+      "top1_accuracy": 0.16889778556236706,
+      "top1_accuracy_ci": {
+        "lower": 0.1603872138120856,
+        "upper": 0.17715501063430503,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.2968847741774052,
+      "top5_accuracy_ci": {
+        "lower": 0.28687288877768047,
+        "upper": 0.30664331289878644,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.831102214437633,
+      "top5_error_rate": 0.7031152258225948,
+      "expected_calibration_error": 0.18756446921395134,
+      "roc_auc_misclassification": 0.7867148934272221,
+      "top_confused_pairs": [
+        {
+          "true_class": 623,
+          "predicted_class": 784,
+          "count": 75
+        },
+        {
+          "true_class": 0,
+          "predicted_class": 831,
+          "count": 64
+        },
+        {
+          "true_class": 534,
+          "predicted_class": 412,
+          "count": 58
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 725,
+          "count": 52
+        },
+        {
+          "true_class": 738,
+          "predicted_class": 883,
+          "count": 44
+        },
+        {
+          "true_class": 435,
+          "predicted_class": 896,
+          "count": 40
+        },
+        {
+          "true_class": 435,
+          "predicted_class": 463,
+          "count": 40
+        },
+        {
+          "true_class": 883,
+          "predicted_class": 572,
+          "count": 39
+        },
+        {
+          "true_class": 721,
+          "predicted_class": 879,
+          "count": 39
+        },
+        {
+          "true_class": 495,
+          "predicted_class": 412,
+          "count": 38
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 7444,
+      "n_excluded": 549,
+      "top1_accuracy": 0.2243417517463729,
+      "top1_accuracy_ci": {
+        "lower": 0.21520351961311124,
+        "upper": 0.23308033315421817,
+        "confidence": 0.95
+      },
+      "error_rate": 0.7756582482536271,
+      "expected_calibration_error": 0.13542504427671304,
+      "roc_auc_misclassification": 0.7735291280964224,
+      "n_ground_truth_classes": 51,
+      "n_predicted_classes": 50,
+      "ground_truth_classes": [
+        "airplane",
+        "bag",
+        "basket",
+        "bathtub",
+        "bed",
+        "bench",
+        "birdhouse",
+        "bookshelf",
+        "bottle",
+        "bowl",
+        "bus",
+        "cabinet",
+        "camera",
+        "cap",
+        "car",
+        "chair",
+        "clock",
+        "dishwasher",
+        "display",
+        "earphone",
+        "file cabinet",
+        "flowerpot",
+        "guitar",
+        "helmet",
+        "jar",
+        "keyboard",
+        "knife",
+        "lamp",
+        "laptop",
+        "loudspeaker",
+        "mailbox",
+        "microphone",
+        "microwaves",
+        "motorbike",
+        "mug",
+        "piano",
+        "pillow",
+        "pistol",
+        "printer",
+        "remote",
+        "rifle",
+        "rocket",
+        "sofa",
+        "stove",
+        "table",
+        "telephone",
+        "tower",
+        "train",
+        "trash bin",
+        "washer",
+        "watercraft"
+      ],
+      "top_confused_pairs": [
+        {
+          "true_class": "bottle",
+          "predicted_class": "<unmapped>",
+          "count": 141
+        },
+        {
+          "true_class": "knife",
+          "predicted_class": "<unmapped>",
+          "count": 122
+        },
+        {
+          "true_class": "microphone",
+          "predicted_class": "<unmapped>",
+          "count": 120
+        },
+        {
+          "true_class": "tower",
+          "predicted_class": "<unmapped>",
+          "count": 118
+        },
+        {
+          "true_class": "mailbox",
+          "predicted_class": "<unmapped>",
+          "count": 115
+        },
+        {
+          "true_class": "remote",
+          "predicted_class": "<unmapped>",
+          "count": 114
+        },
+        {
+          "true_class": "bathtub",
+          "predicted_class": "<unmapped>",
+          "count": 110
+        },
+        {
+          "true_class": "train",
+          "predicted_class": "<unmapped>",
+          "count": 109
+        },
+        {
+          "true_class": "pillow",
+          "predicted_class": "<unmapped>",
+          "count": 107
+        },
+        {
+          "true_class": "car",
+          "predicted_class": "<unmapped>",
+          "count": 101
+        }
+      ]
+    },
+    "per_class_imagenet": "    class_idx                     class_label  support  base_accuracy  overall_accuracy  precision    recall        f1  tp  fp   fn\n71        907                     wine bottle       50            NaN          0.700000   0.921053  0.700000  0.795455  35   3   15\n23        560                 football helmet       50            NaN          0.440000   0.956522  0.440000  0.602740  22   1   28\n54        790                 shopping basket      100            NaN          0.430000   0.895833  0.430000  0.581081  43   5   57\n51        763  revolver, six-gun, six-shooter      150            NaN          0.393333   1.000000  0.393333  0.564593  59   0   91\n13        504                      coffee mug      150            NaN          0.426667   0.820513  0.426667  0.561404  64  14   86\n..        ...                             ...      ...            ...               ...        ...       ...       ...  ..  ..  ...\n53        779                      school bus      150            NaN          0.000000   0.000000  0.000000  0.000000   0   0  150\n57        814                       speedboat       50            NaN          0.000000   0.000000  0.000000  0.000000   0   0   50\n59        820                steam locomotive       50            NaN          0.000000   0.000000  0.000000  0.000000   0   0   50\n70        900                     water tower       50            NaN          0.000000   0.000000  0.000000  0.000000   0   3   50\n72        914                            yawl       50            NaN          0.000000   0.000000  0.000000  0.000000   0   0   50\n\n[73 rows x 11 columns]",
+    "per_class_shapenet": "      superclass  support  base_accuracy  overall_accuracy  precision    recall        f1   tp   fp   fn\n0       airplane      150            NaN          0.640000   0.744186  0.640000  0.688172   96   33   54\n9           bowl      150            NaN          0.473333   0.972603  0.473333  0.636771   71    2   79\n23        helmet      150            NaN          0.480000   0.757895  0.480000  0.587755   72   23   78\n37        pistol      150            NaN          0.393333   1.000000  0.393333  0.564593   59    0   91\n34           mug      150            NaN          0.426667   0.820513  0.426667  0.561404   64   14   86\n33     motorbike      150            NaN          0.373333   1.000000  0.373333  0.543689   56    0   94\n27          lamp      150            NaN          0.546667   0.529032  0.546667  0.537705   82   73   68\n5          bench      150            NaN          0.406667   0.726190  0.406667  0.521368   61   23   89\n40         rifle      150            NaN          0.386667   0.773333  0.386667  0.515556   58   17   92\n13           cap      150            NaN          0.366667   0.774648  0.366667  0.497738   55   16   95\n8         bottle      300            NaN          0.366667   0.674847  0.366667  0.475162  110   53  190\n44         table      150            NaN          0.593333   0.354582  0.593333  0.443890   89  162   61\n2         basket      150            NaN          0.293333   0.830189  0.293333  0.433498   44    9  106\n24           jar      149            NaN          0.402685   0.447761  0.402685  0.424028   60   74   89\n15         chair      150            NaN          0.380000   0.410072  0.380000  0.394464   57   82   93\n1            bag      150            NaN          0.253333   0.558824  0.253333  0.348624   38   30  112\n35         piano      150            NaN          0.213333   0.941176  0.213333  0.347826   32    2  118\n41        rocket      149            NaN          0.322148   0.352941  0.322148  0.336842   48   88  101\n28        laptop      150            NaN          0.440000   0.254826  0.440000  0.322738   66  193   84\n18       display      150            NaN          0.280000   0.344262  0.280000  0.308824   42   80  108\n48     trash bin      149            NaN          0.738255   0.174051  0.738255  0.281690  110  522   39\n6      birdhouse      150            NaN          0.146667   1.000000  0.146667  0.255814   22    0  128\n16         clock      149            NaN          0.181208   0.325301  0.181208  0.232759   27   56  122\n31    microphone      150            NaN          0.146667   0.448980  0.146667  0.221106   22   27  128\n30       mailbox      150            NaN          0.173333   0.282609  0.173333  0.214876   26   66  124\n22        guitar       50            NaN          0.120000   1.000000  0.120000  0.214286    6    0   44\n14           car      150            NaN          0.120000   0.692308  0.120000  0.204545   18    8  132\n42          sofa       50            NaN          0.280000   0.129630  0.280000  0.177215   14   94   36\n12        camera      150            NaN          0.100000   0.750000  0.100000  0.176471   15    5  135\n39        remote      149            NaN          0.107383   0.421053  0.107383  0.171123   16   22  133\n50    watercraft      150            NaN          0.093333   0.875000  0.093333  0.168675   14    2  136\n38       printer      149            NaN          0.120805   0.264706  0.120805  0.165899   18   50  131\n7      bookshelf      150            NaN          0.080000   0.923077  0.080000  0.147239   12    1  138\n25      keyboard      150            NaN          0.080000   0.923077  0.080000  0.147239   12    1  138\n36        pillow      150            NaN          0.066667   1.000000  0.066667  0.125000   10    0  140\n29   loudspeaker      150            NaN          0.073333   0.343750  0.073333  0.120879   11   21  139\n3        bathtub      150            NaN          0.066667   0.588235  0.066667  0.119760   10    7  140\n20  file cabinet      150            NaN          0.066667   0.294118  0.066667  0.108696   10   24  140\n26         knife      150            NaN          0.060000   0.391304  0.060000  0.104046    9   14  141\n49        washer      150            NaN          0.046667   0.700000  0.046667  0.087500    7    3  143\n4            bed      100            NaN          0.040000   0.666667  0.040000  0.075472    4    2   96\n43         stove      150            NaN          0.026667   0.500000  0.026667  0.050633    4    4  146\n32    microwaves      150            NaN          0.026667   0.086957  0.026667  0.040816    4   42  146\n21     flowerpot      150            NaN          0.020000   1.000000  0.020000  0.039216    3    0  147\n11       cabinet      150            NaN          0.020000   0.375000  0.020000  0.037975    3    5  147\n17    dishwasher      150            NaN          0.013333   0.133333  0.013333  0.024242    2   13  148\n45     telephone      150            NaN          0.006667   0.090909  0.006667  0.012422    1   10  149\n10           bus      150            NaN          0.000000   0.000000  0.000000  0.000000    0    0  150\n19      earphone       50            NaN          0.000000   0.000000  0.000000  0.000000    0    7   50\n46         tower      150            NaN          0.000000   0.000000  0.000000  0.000000    0    3  150\n47         train      150            NaN          0.000000   0.000000  0.000000  0.000000    0    0  150"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [
+        {
+          "value": "X=0.000 Y=-1.000 Z=0.200",
+          "n_samples": 165,
+          "imagenet_top1_acc": 0.20606060606060606,
+          "imagenet_top5_acc": 0.3878787878787879,
+          "shapenet_evaluable": 154,
+          "shapenet_top1_acc": 0.2987012987012987
+        },
+        {
+          "value": "X=0.000 Y=0.000 Z=0.400",
+          "n_samples": 160,
+          "imagenet_top1_acc": 0.075,
+          "imagenet_top5_acc": 0.14375,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.08053691275167785
+        },
+        {
+          "value": "X=0.000 Y=1.000 Z=0.200",
+          "n_samples": 159,
+          "imagenet_top1_acc": 0.1949685534591195,
+          "imagenet_top5_acc": 0.3584905660377358,
+          "shapenet_evaluable": 148,
+          "shapenet_top1_acc": 0.2635135135135135
+        },
+        {
+          "value": "X=1.000 Y=0.000 Z=0.200",
+          "n_samples": 159,
+          "imagenet_top1_acc": 0.14465408805031446,
+          "imagenet_top5_acc": 0.3333333333333333,
+          "shapenet_evaluable": 148,
+          "shapenet_top1_acc": 0.22972972972972974
+        },
+        {
+          "value": "X=-1.000 Y=0.000 Z=0.200",
+          "n_samples": 157,
+          "imagenet_top1_acc": 0.267515923566879,
+          "imagenet_top5_acc": 0.42038216560509556,
+          "shapenet_evaluable": 146,
+          "shapenet_top1_acc": 0.3493150684931507
+        }
+      ],
+      "Fog": [
+        {
+          "value": "False",
+          "n_samples": 160,
+          "imagenet_top1_acc": 0.25625,
+          "imagenet_top5_acc": 0.41875,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.33557046979865773
+        }
+      ],
+      "Light Color (RGB)": [
+        {
+          "value": "(R=1.000000,G=1.000000,B=1.000000,A=0.000000)",
+          "n_samples": 160,
+          "imagenet_top1_acc": 0.25625,
+          "imagenet_top5_acc": 0.41875,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.33557046979865773
+        }
+      ],
+      "Material": [
+        {
+          "value": "M_Tri_Plastic1_Black",
+          "n_samples": 800,
+          "imagenet_top1_acc": 0.17875,
+          "imagenet_top5_acc": 0.3275,
+          "shapenet_evaluable": 745,
+          "shapenet_top1_acc": 0.24026845637583893
+        },
+        {
+          "value": "M_Tri_Plastic1_Cyan",
+          "n_samples": 800,
+          "imagenet_top1_acc": 0.1625,
+          "imagenet_top5_acc": 0.28125,
+          "shapenet_evaluable": 745,
+          "shapenet_top1_acc": 0.21476510067114093
+        },
+        {
+          "value": "M_Tri_Plastic1_Yellow",
+          "n_samples": 800,
+          "imagenet_top1_acc": 0.16875,
+          "imagenet_top5_acc": 0.2925,
+          "shapenet_evaluable": 745,
+          "shapenet_top1_acc": 0.2295302013422819
+        },
+        {
+          "value": "M_Tri_Plastic1_Green",
+          "n_samples": 800,
+          "imagenet_top1_acc": 0.14875,
+          "imagenet_top5_acc": 0.26375,
+          "shapenet_evaluable": 745,
+          "shapenet_top1_acc": 0.20939597315436242
+        },
+        {
+          "value": "M_Tri_Plastic1_Grey",
+          "n_samples": 799,
+          "imagenet_top1_acc": 0.18397997496871088,
+          "imagenet_top5_acc": 0.3304130162703379,
+          "shapenet_evaluable": 744,
+          "shapenet_top1_acc": 0.24327956989247312
+        },
+        {
+          "value": "M_Tri_Plastic1_Blue",
+          "n_samples": 799,
+          "imagenet_top1_acc": 0.15644555694618273,
+          "imagenet_top5_acc": 0.2765957446808511,
+          "shapenet_evaluable": 744,
+          "shapenet_top1_acc": 0.1989247311827957
+        },
+        {
+          "value": "M_Tri_Plastic1_Red",
+          "n_samples": 799,
+          "imagenet_top1_acc": 0.18147684605757197,
+          "imagenet_top5_acc": 0.2816020025031289,
+          "shapenet_evaluable": 744,
+          "shapenet_top1_acc": 0.23655913978494625
+        },
+        {
+          "value": "M_Tri_Plastic1_Pink",
+          "n_samples": 798,
+          "imagenet_top1_acc": 0.15413533834586465,
+          "imagenet_top5_acc": 0.2731829573934837,
+          "shapenet_evaluable": 743,
+          "shapenet_top1_acc": 0.19919246298788695
+        },
+        {
+          "value": "M_Tri_Plastic1_White",
+          "n_samples": 798,
+          "imagenet_top1_acc": 0.17669172932330826,
+          "imagenet_top5_acc": 0.3132832080200501,
+          "shapenet_evaluable": 744,
+          "shapenet_top1_acc": 0.2271505376344086
+        },
+        {
+          "value": "Default",
+          "n_samples": 160,
+          "imagenet_top1_acc": 0.25625,
+          "imagenet_top5_acc": 0.41875,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.33557046979865773
+        }
+      ],
+      "Object": [
+        {
+          "value": "acoustic-guitar-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.12
+        },
+        {
+          "value": "analog-clock-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.18,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.18
+        },
+        {
+          "value": "assault-rifle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.4,
+          "imagenet_top5_acc": 0.44,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.4
+        },
+        {
+          "value": "backpack-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.3,
+          "imagenet_top5_acc": 0.44,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.3
+        },
+        {
+          "value": "backpack-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.28,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.24
+        },
+        {
+          "value": "bathtub-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "bathtub-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.1,
+          "imagenet_top5_acc": 0.42,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.1
+        },
+        {
+          "value": "bathtub-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "bed-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bed-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "bench-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.5,
+          "imagenet_top5_acc": 0.56,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.5
+        },
+        {
+          "value": "bench-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bench-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.72,
+          "imagenet_top5_acc": 0.82,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.72
+        },
+        {
+          "value": "birdhouse-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "birdhouse-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.42,
+          "imagenet_top5_acc": 0.46,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.42
+        },
+        {
+          "value": "birdhouse-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.28,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "bookshelf-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bookshelf-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "bookshelf-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.2,
+          "imagenet_top5_acc": 0.2,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "bullet-train-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bus-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bus-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "bus-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "can-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "can-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.28,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.3
+        },
+        {
+          "value": "can-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.16,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "china-cabinet-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.18,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "china-cabinet-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "china-cabinet-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "computer-keyboard-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "computer-keyboard-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.24,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "computer-keyboard-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.2,
+          "imagenet_top5_acc": 0.6,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "cowboy-hat-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.3,
+          "imagenet_top5_acc": 0.74,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.3
+        },
+        {
+          "value": "cowboy-hat-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.14,
+          "imagenet_top5_acc": 0.3,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.14
+        },
+        {
+          "value": "cowboy-hat-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.64,
+          "imagenet_top5_acc": 0.74,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.66
+        },
+        {
+          "value": "crash-helmet-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.48,
+          "imagenet_top5_acc": 0.54,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.48
+        },
+        {
+          "value": "crash-helmet-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.38,
+          "imagenet_top5_acc": 0.46,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.4
+        },
+        {
+          "value": "crate-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.12,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "day-bed-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.28,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.28
+        },
+        {
+          "value": "dining-table-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.54,
+          "imagenet_top5_acc": 0.7,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.66
+        },
+        {
+          "value": "dining-table-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.34
+        },
+        {
+          "value": "dining-table-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.74,
+          "imagenet_top5_acc": 0.8,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.78
+        },
+        {
+          "value": "dishwasher-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "dishwasher-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "dishwasher-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "earphone-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "electric-locomotive-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "faucet-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "flowerpot-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.3,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "faucet-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "faucet-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "fighter-jet",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.68,
+          "imagenet_top5_acc": 0.72,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.68
+        },
+        {
+          "value": "file-cabinet-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.3,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "file-cabinet-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.1,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "file-cabinet-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.1,
+          "imagenet_top5_acc": 0.16,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.1
+        },
+        {
+          "value": "flowerpot-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "football-helmet-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.44,
+          "imagenet_top5_acc": 0.56,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.56
+        },
+        {
+          "value": "flowerpot-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "folding-chair-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.12,
+          "imagenet_top5_acc": 0.62,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "folding-chair-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.4,
+          "imagenet_top5_acc": 0.58,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.5
+        },
+        {
+          "value": "iPod-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "grand-piano-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.38,
+          "imagenet_top5_acc": 0.48,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.38
+        },
+        {
+          "value": "knife-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.3,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "knife-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.1,
+          "imagenet_top5_acc": 0.56,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.1
+        },
+        {
+          "value": "microwave-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "knife-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.56,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "laptop-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.56,
+          "imagenet_top5_acc": 0.8,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.68
+        },
+        {
+          "value": "laptop-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.12,
+          "imagenet_top5_acc": 0.58,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.4
+        },
+        {
+          "value": "laptop-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.48,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.24
+        },
+        {
+          "value": "limousine-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.18,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "loudspeaker-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.1,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "loudspeaker-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.16,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.16
+        },
+        {
+          "value": "loudspeaker-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.1,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "mailbox-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.36,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.36
+        },
+        {
+          "value": "mailbox-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.14,
+          "imagenet_top5_acc": 0.24,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.14
+        },
+        {
+          "value": "mailbox-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "microphone-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "microphone-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.38,
+          "imagenet_top5_acc": 0.62,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.38
+        },
+        {
+          "value": "microphone-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.16,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "microwave-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.12,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "moped-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.32,
+          "imagenet_top5_acc": 0.62,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.42
+        },
+        {
+          "value": "microwave-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "missile-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.36,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.36
+        },
+        {
+          "value": "mixing-bowl-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.26
+        },
+        {
+          "value": "mobile-phone-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.1,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "mobile-phone-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "mobile-phone-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "monitor-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.32,
+          "imagenet_top5_acc": 0.46,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.38
+        },
+        {
+          "value": "mosque-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "monitor-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.16,
+          "imagenet_top5_acc": 0.9,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.22
+        },
+        {
+          "value": "monitor-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.12,
+          "imagenet_top5_acc": 0.7,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.24
+        },
+        {
+          "value": "moped-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.24,
+          "imagenet_top5_acc": 0.36,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.24
+        },
+        {
+          "value": "mug-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.92,
+          "imagenet_top5_acc": 0.98,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.92
+        },
+        {
+          "value": "moped-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.46,
+          "imagenet_top5_acc": 0.5,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.46
+        },
+        {
+          "value": "mug-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.32,
+          "imagenet_top5_acc": 0.68,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.32
+        },
+        {
+          "value": "mug-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.16,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "trash-can-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.8,
+          "imagenet_top5_acc": 0.8,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.8
+        },
+        {
+          "value": "upright-piano-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "obelisk-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "ocean-liner-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "old-plane",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.38
+        },
+        {
+          "value": "pas-plane",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.6,
+          "imagenet_top5_acc": 0.74,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.86
+        },
+        {
+          "value": "pill-bottle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.1
+        },
+        {
+          "value": "pillow-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.16,
+          "imagenet_top5_acc": 0.36,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.16
+        },
+        {
+          "value": "pillow-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "pillow-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "plastic-bag-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.22
+        },
+        {
+          "value": "printer-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.18,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "printer-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.18,
+          "imagenet_top5_acc": 0.34,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.18
+        },
+        {
+          "value": "race-car-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.34,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.16
+        },
+        {
+          "value": "reflex-camera-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.2,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "reflex-camera-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "skateboard-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "reflex-camera-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.28,
+          "imagenet_top5_acc": 0.44,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.28
+        },
+        {
+          "value": "remote-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.18,
+          "imagenet_top5_acc": 0.28,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.18
+        },
+        {
+          "value": "remote-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.08,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "revolver-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.42,
+          "imagenet_top5_acc": 0.42,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.42
+        },
+        {
+          "value": "revolver-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.4,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.4
+        },
+        {
+          "value": "revolver-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.36,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.36
+        },
+        {
+          "value": "rifle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.12,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.4
+        },
+        {
+          "value": "skateboard-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "rifle-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.2,
+          "imagenet_top5_acc": 0.36,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.36
+        },
+        {
+          "value": "shopping-basket-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.44,
+          "imagenet_top5_acc": 0.52,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.46
+        },
+        {
+          "value": "shopping-basket-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.42,
+          "imagenet_top5_acc": 0.72,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.42
+        },
+        {
+          "value": "sofa-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "skateboard-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "sofa-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "sofa-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "water-bottle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.7,
+          "imagenet_top5_acc": 0.78,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.72
+        },
+        {
+          "value": "water-tower-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "soup-bowl-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.18,
+          "imagenet_top5_acc": 0.78,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.66
+        },
+        {
+          "value": "soup-bowl-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.3,
+          "imagenet_top5_acc": 0.84,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.5
+        },
+        {
+          "value": "space-shuttle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "speedboat-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "sports-car-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.38,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.12
+        },
+        {
+          "value": "steam-locomotive-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.02,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "stove-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "stove-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "stove-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.18,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "table-lamp-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.78,
+          "imagenet_top5_acc": 0.8,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.78
+        },
+        {
+          "value": "table-lamp-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.26,
+          "imagenet_top5_acc": 0.52,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.26
+        },
+        {
+          "value": "table-lamp-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.6,
+          "imagenet_top5_acc": 0.74,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.6
+        },
+        {
+          "value": "toilet-seat-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.44,
+          "imagenet_top5_acc": 0.52,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.44
+        },
+        {
+          "value": "trash-can-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.72,
+          "imagenet_top5_acc": 0.78,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.72
+        },
+        {
+          "value": "yawl-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.28
+        },
+        {
+          "value": "washer-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.1,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "upright-piano-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.12,
+          "imagenet_top5_acc": 0.16,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "vase-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.8,
+          "imagenet_top5_acc": 0.8,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.8
+        },
+        {
+          "value": "vase-3",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.42,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "washer-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.08,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "washer-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "wall-clock-2",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.04,
+          "imagenet_top5_acc": 0.2,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.2
+        },
+        {
+          "value": "wine-bottle-1",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.7,
+          "imagenet_top5_acc": 0.9,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.84
+        },
+        {
+          "value": "earphone-1",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "missile-1",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.3673469387755102,
+          "imagenet_top5_acc": 0.6122448979591837,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.5306122448979592
+        },
+        {
+          "value": "printer-3",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.10204081632653061,
+          "imagenet_top5_acc": 0.2653061224489796,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.10204081632653061
+        },
+        {
+          "value": "remote-1",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.12244897959183673,
+          "imagenet_top5_acc": 0.32653061224489793,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.12244897959183673
+        },
+        {
+          "value": "wall-clock-1",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.02040816326530612,
+          "imagenet_top5_acc": 0.1836734693877551,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.16326530612244897
+        },
+        {
+          "value": "trash-can-3",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.6938775510204082,
+          "imagenet_top5_acc": 0.7551020408163265,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.6938775510204082
+        },
+        {
+          "value": "vase-1",
+          "n_samples": 49,
+          "imagenet_top1_acc": 0.3673469387755102,
+          "imagenet_top5_acc": 0.6122448979591837,
+          "shapenet_evaluable": 49,
+          "shapenet_top1_acc": 0.3673469387755102
+        }
+      ],
+      "Level": [
+        {
+          "value": "BaseMap",
+          "n_samples": 160,
+          "imagenet_top1_acc": 0.25625,
+          "imagenet_top5_acc": 0.41875,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.33557046979865773
+        }
+      ],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 549,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": NaN
+        },
+        {
+          "value": "bottle",
+          "n_samples": 300,
+          "imagenet_top1_acc": 0.24,
+          "imagenet_top5_acc": 0.35333333333333333,
+          "shapenet_evaluable": 300,
+          "shapenet_top1_acc": 0.36666666666666664
+        },
+        {
+          "value": "bag",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.13333333333333333,
+          "imagenet_top5_acc": 0.31333333333333335,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.25333333333333335
+        },
+        {
+          "value": "airplane",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.4266666666666667,
+          "imagenet_top5_acc": 0.5333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.64
+        },
+        {
+          "value": "basket",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.2866666666666667,
+          "imagenet_top5_acc": 0.4533333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.29333333333333333
+        },
+        {
+          "value": "bathtub",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.06666666666666667,
+          "imagenet_top5_acc": 0.3466666666666667,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.06666666666666667
+        },
+        {
+          "value": "birdhouse",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.14666666666666667,
+          "imagenet_top5_acc": 0.24666666666666667,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.14666666666666667
+        },
+        {
+          "value": "bench",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.4066666666666667,
+          "imagenet_top5_acc": 0.47333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.4066666666666667
+        },
+        {
+          "value": "bowl",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.16,
+          "imagenet_top5_acc": 0.56,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.47333333333333333
+        },
+        {
+          "value": "bookshelf",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.08,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "bus",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "cabinet",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "chair",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.32,
+          "imagenet_top5_acc": 0.5733333333333334,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.38
+        },
+        {
+          "value": "camera",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.1,
+          "imagenet_top5_acc": 0.22,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.1
+        },
+        {
+          "value": "cap",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.36,
+          "imagenet_top5_acc": 0.5933333333333334,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.36666666666666664
+        },
+        {
+          "value": "car",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.07333333333333333,
+          "imagenet_top5_acc": 0.3,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.12
+        },
+        {
+          "value": "display",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.2,
+          "imagenet_top5_acc": 0.6866666666666666,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.28
+        },
+        {
+          "value": "dishwasher",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.013333333333333334,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.013333333333333334
+        },
+        {
+          "value": "flowerpot",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.19333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.02
+        },
+        {
+          "value": "file cabinet",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.06666666666666667,
+          "imagenet_top5_acc": 0.18666666666666668,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.06666666666666667
+        },
+        {
+          "value": "train",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.006666666666666667,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "washer",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.04666666666666667,
+          "imagenet_top5_acc": 0.08,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.04666666666666667
+        },
+        {
+          "value": "keyboard",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.07333333333333333,
+          "imagenet_top5_acc": 0.41333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.08
+        },
+        {
+          "value": "helmet",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.43333333333333335,
+          "imagenet_top5_acc": 0.52,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.48
+        },
+        {
+          "value": "knife",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.06,
+          "imagenet_top5_acc": 0.47333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.06
+        },
+        {
+          "value": "loudspeaker",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.07333333333333333,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.07333333333333333
+        },
+        {
+          "value": "laptop",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.25333333333333335,
+          "imagenet_top5_acc": 0.62,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.44
+        },
+        {
+          "value": "lamp",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.5466666666666666,
+          "imagenet_top5_acc": 0.6866666666666666,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.5466666666666666
+        },
+        {
+          "value": "microphone",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.14666666666666667,
+          "imagenet_top5_acc": 0.2733333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.14666666666666667
+        },
+        {
+          "value": "microwaves",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.02666666666666667,
+          "imagenet_top5_acc": 0.07333333333333333,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.02666666666666667
+        },
+        {
+          "value": "motorbike",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.34,
+          "imagenet_top5_acc": 0.49333333333333335,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.37333333333333335
+        },
+        {
+          "value": "mailbox",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.17333333333333334,
+          "imagenet_top5_acc": 0.22666666666666666,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.17333333333333334
+        },
+        {
+          "value": "mug",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.4266666666666667,
+          "imagenet_top5_acc": 0.6066666666666667,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.4266666666666667
+        },
+        {
+          "value": "pistol",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.3933333333333333,
+          "imagenet_top5_acc": 0.4066666666666667,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.3933333333333333
+        },
+        {
+          "value": "pillow",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.06666666666666667,
+          "imagenet_top5_acc": 0.15333333333333332,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.06666666666666667
+        },
+        {
+          "value": "piano",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.18666666666666668,
+          "imagenet_top5_acc": 0.23333333333333334,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.21333333333333335
+        },
+        {
+          "value": "tower",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.0,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "telephone",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.006666666666666667,
+          "imagenet_top5_acc": 0.04,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.006666666666666667
+        },
+        {
+          "value": "watercraft",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.08,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.09333333333333334
+        },
+        {
+          "value": "rifle",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.24,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.38666666666666666
+        },
+        {
+          "value": "table",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.4266666666666667,
+          "imagenet_top5_acc": 0.5466666666666666,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.5933333333333334
+        },
+        {
+          "value": "stove",
+          "n_samples": 150,
+          "imagenet_top1_acc": 0.02666666666666667,
+          "imagenet_top5_acc": 0.09333333333333334,
+          "shapenet_evaluable": 150,
+          "shapenet_top1_acc": 0.02666666666666667
+        },
+        {
+          "value": "remote",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.10738255033557047,
+          "imagenet_top5_acc": 0.22818791946308725,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.10738255033557047
+        },
+        {
+          "value": "clock",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.08053691275167785,
+          "imagenet_top5_acc": 0.20134228187919462,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.18120805369127516
+        },
+        {
+          "value": "trash bin",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.738255033557047,
+          "imagenet_top5_acc": 0.7785234899328859,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.738255033557047
+        },
+        {
+          "value": "rocket",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.14093959731543623,
+          "imagenet_top5_acc": 0.3288590604026846,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.3221476510067114
+        },
+        {
+          "value": "jar",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.40268456375838924,
+          "imagenet_top5_acc": 0.610738255033557,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.40268456375838924
+        },
+        {
+          "value": "printer",
+          "n_samples": 149,
+          "imagenet_top1_acc": 0.12080536912751678,
+          "imagenet_top5_acc": 0.26174496644295303,
+          "shapenet_evaluable": 149,
+          "shapenet_top1_acc": 0.12080536912751678
+        },
+        {
+          "value": "bed",
+          "n_samples": 100,
+          "imagenet_top1_acc": 0.02,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 100,
+          "shapenet_top1_acc": 0.04
+        },
+        {
+          "value": "earphone",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.0,
+          "imagenet_top5_acc": 0.06,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.0
+        },
+        {
+          "value": "guitar",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.08,
+          "imagenet_top5_acc": 0.14,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.12
+        },
+        {
+          "value": "sofa",
+          "n_samples": 50,
+          "imagenet_top1_acc": 0.28,
+          "imagenet_top5_acc": 0.4,
+          "shapenet_evaluable": 50,
+          "shapenet_top1_acc": 0.28
+        }
+      ]
+    },
+    "variance": {
+      "Camera Position": {
+        "n_groups": 5,
+        "imagenet_top1_variance": 0.004161746247570439,
+        "imagenet_top1_std": 0.06451159777567472,
+        "imagenet_top1_range": 0.19251592356687897,
+        "shapenet_top1_variance": 0.00827748978963859,
+        "shapenet_top1_std": 0.09098071108558445,
+        "shapenet_top1_range": 0.26877815574147285
+      },
+      "Fog": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": 0.0,
+        "shapenet_top1_std": 0.0,
+        "shapenet_top1_range": 0.0
+      },
+      "Light Color (RGB)": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": 0.0,
+        "shapenet_top1_std": 0.0,
+        "shapenet_top1_range": 0.0
+      },
+      "Material": {
+        "n_groups": 10,
+        "imagenet_top1_variance": 0.0008373619572098409,
+        "imagenet_top1_std": 0.02893720714253262,
+        "imagenet_top1_range": 0.10749999999999998,
+        "shapenet_top1_variance": 0.0013929709773664294,
+        "shapenet_top1_std": 0.03732252640653402,
+        "shapenet_top1_range": 0.13664573861586204
+      },
+      "Object": {
+        "n_groups": 160,
+        "imagenet_top1_variance": 0.050690145356101626,
+        "imagenet_top1_std": 0.22514472091546278,
+        "imagenet_top1_range": 0.92,
+        "shapenet_top1_variance": 0.05828241974084,
+        "shapenet_top1_std": 0.2414175216110877,
+        "shapenet_top1_range": 0.92
+      },
+      "Level": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": 0.0,
+        "shapenet_top1_std": 0.0,
+        "shapenet_top1_range": 0.0
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 52,
+        "imagenet_top1_variance": 0.028618305446198162,
+        "imagenet_top1_std": 0.1691694577818294,
+        "imagenet_top1_range": 0.738255033557047,
+        "shapenet_top1_variance": 0.03723669409168494,
+        "shapenet_top1_std": 0.1929681167749868,
+        "shapenet_top1_range": 0.738255033557047
+      }
+    },
+    "best_worst": {
+      "Camera Position": {
+        "best": [
+          {
+            "value": "X=-1.000 Y=0.000 Z=0.200",
+            "n_samples": 157,
+            "imagenet_top1_acc": 0.267515923566879,
+            "imagenet_top5_acc": 0.42038216560509556,
+            "shapenet_evaluable": 146,
+            "shapenet_top1_acc": 0.3493150684931507
+          },
+          {
+            "value": "X=0.000 Y=-1.000 Z=0.200",
+            "n_samples": 165,
+            "imagenet_top1_acc": 0.20606060606060606,
+            "imagenet_top5_acc": 0.3878787878787879,
+            "shapenet_evaluable": 154,
+            "shapenet_top1_acc": 0.2987012987012987
+          },
+          {
+            "value": "X=0.000 Y=1.000 Z=0.200",
+            "n_samples": 159,
+            "imagenet_top1_acc": 0.1949685534591195,
+            "imagenet_top5_acc": 0.3584905660377358,
+            "shapenet_evaluable": 148,
+            "shapenet_top1_acc": 0.2635135135135135
+          },
+          {
+            "value": "X=1.000 Y=0.000 Z=0.200",
+            "n_samples": 159,
+            "imagenet_top1_acc": 0.14465408805031446,
+            "imagenet_top5_acc": 0.3333333333333333,
+            "shapenet_evaluable": 148,
+            "shapenet_top1_acc": 0.22972972972972974
+          },
+          {
+            "value": "X=0.000 Y=0.000 Z=0.400",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.075,
+            "imagenet_top5_acc": 0.14375,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.08053691275167785
+          }
+        ],
+        "worst": [
+          {
+            "value": "X=-1.000 Y=0.000 Z=0.200",
+            "n_samples": 157,
+            "imagenet_top1_acc": 0.267515923566879,
+            "imagenet_top5_acc": 0.42038216560509556,
+            "shapenet_evaluable": 146,
+            "shapenet_top1_acc": 0.3493150684931507
+          },
+          {
+            "value": "X=0.000 Y=-1.000 Z=0.200",
+            "n_samples": 165,
+            "imagenet_top1_acc": 0.20606060606060606,
+            "imagenet_top5_acc": 0.3878787878787879,
+            "shapenet_evaluable": 154,
+            "shapenet_top1_acc": 0.2987012987012987
+          },
+          {
+            "value": "X=0.000 Y=1.000 Z=0.200",
+            "n_samples": 159,
+            "imagenet_top1_acc": 0.1949685534591195,
+            "imagenet_top5_acc": 0.3584905660377358,
+            "shapenet_evaluable": 148,
+            "shapenet_top1_acc": 0.2635135135135135
+          },
+          {
+            "value": "X=1.000 Y=0.000 Z=0.200",
+            "n_samples": 159,
+            "imagenet_top1_acc": 0.14465408805031446,
+            "imagenet_top5_acc": 0.3333333333333333,
+            "shapenet_evaluable": 148,
+            "shapenet_top1_acc": 0.22972972972972974
+          },
+          {
+            "value": "X=0.000 Y=0.000 Z=0.400",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.075,
+            "imagenet_top5_acc": 0.14375,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.08053691275167785
+          }
+        ]
+      },
+      "Fog": {
+        "best": [
+          {
+            "value": "False",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ],
+        "worst": [
+          {
+            "value": "False",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ]
+      },
+      "Light Color (RGB)": {
+        "best": [
+          {
+            "value": "(R=1.000000,G=1.000000,B=1.000000,A=0.000000)",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ],
+        "worst": [
+          {
+            "value": "(R=1.000000,G=1.000000,B=1.000000,A=0.000000)",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ]
+      },
+      "Material": {
+        "best": [
+          {
+            "value": "Default",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          },
+          {
+            "value": "M_Tri_Plastic1_Grey",
+            "n_samples": 799,
+            "imagenet_top1_acc": 0.18397997496871088,
+            "imagenet_top5_acc": 0.3304130162703379,
+            "shapenet_evaluable": 744,
+            "shapenet_top1_acc": 0.24327956989247312
+          },
+          {
+            "value": "M_Tri_Plastic1_Black",
+            "n_samples": 800,
+            "imagenet_top1_acc": 0.17875,
+            "imagenet_top5_acc": 0.3275,
+            "shapenet_evaluable": 745,
+            "shapenet_top1_acc": 0.24026845637583893
+          },
+          {
+            "value": "M_Tri_Plastic1_Red",
+            "n_samples": 799,
+            "imagenet_top1_acc": 0.18147684605757197,
+            "imagenet_top5_acc": 0.2816020025031289,
+            "shapenet_evaluable": 744,
+            "shapenet_top1_acc": 0.23655913978494625
+          },
+          {
+            "value": "M_Tri_Plastic1_Yellow",
+            "n_samples": 800,
+            "imagenet_top1_acc": 0.16875,
+            "imagenet_top5_acc": 0.2925,
+            "shapenet_evaluable": 745,
+            "shapenet_top1_acc": 0.2295302013422819
+          }
+        ],
+        "worst": [
+          {
+            "value": "M_Tri_Plastic1_White",
+            "n_samples": 798,
+            "imagenet_top1_acc": 0.17669172932330826,
+            "imagenet_top5_acc": 0.3132832080200501,
+            "shapenet_evaluable": 744,
+            "shapenet_top1_acc": 0.2271505376344086
+          },
+          {
+            "value": "M_Tri_Plastic1_Cyan",
+            "n_samples": 800,
+            "imagenet_top1_acc": 0.1625,
+            "imagenet_top5_acc": 0.28125,
+            "shapenet_evaluable": 745,
+            "shapenet_top1_acc": 0.21476510067114093
+          },
+          {
+            "value": "M_Tri_Plastic1_Green",
+            "n_samples": 800,
+            "imagenet_top1_acc": 0.14875,
+            "imagenet_top5_acc": 0.26375,
+            "shapenet_evaluable": 745,
+            "shapenet_top1_acc": 0.20939597315436242
+          },
+          {
+            "value": "M_Tri_Plastic1_Pink",
+            "n_samples": 798,
+            "imagenet_top1_acc": 0.15413533834586465,
+            "imagenet_top5_acc": 0.2731829573934837,
+            "shapenet_evaluable": 743,
+            "shapenet_top1_acc": 0.19919246298788695
+          },
+          {
+            "value": "M_Tri_Plastic1_Blue",
+            "n_samples": 799,
+            "imagenet_top1_acc": 0.15644555694618273,
+            "imagenet_top5_acc": 0.2765957446808511,
+            "shapenet_evaluable": 744,
+            "shapenet_top1_acc": 0.1989247311827957
+          }
+        ]
+      },
+      "Object": {
+        "best": [
+          {
+            "value": "mug-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.92,
+            "imagenet_top5_acc": 0.98,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.92
+          },
+          {
+            "value": "pas-plane",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.6,
+            "imagenet_top5_acc": 0.74,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.86
+          },
+          {
+            "value": "wine-bottle-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.7,
+            "imagenet_top5_acc": 0.9,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.84
+          },
+          {
+            "value": "trash-can-2",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.8,
+            "imagenet_top5_acc": 0.8,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.8
+          },
+          {
+            "value": "vase-2",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.8,
+            "imagenet_top5_acc": 0.8,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.8
+          }
+        ],
+        "worst": [
+          {
+            "value": "obelisk-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.0,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "steam-locomotive-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.02,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "stove-2",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.04,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "water-tower-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.0,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "speedboat-1",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.02,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          }
+        ]
+      },
+      "Level": {
+        "best": [
+          {
+            "value": "BaseMap",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ],
+        "worst": [
+          {
+            "value": "BaseMap",
+            "n_samples": 160,
+            "imagenet_top1_acc": 0.25625,
+            "imagenet_top5_acc": 0.41875,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.33557046979865773
+          }
+        ]
+      },
+      "true_shapenet_superclass": {
+        "best": [
+          {
+            "value": "trash bin",
+            "n_samples": 149,
+            "imagenet_top1_acc": 0.738255033557047,
+            "imagenet_top5_acc": 0.7785234899328859,
+            "shapenet_evaluable": 149,
+            "shapenet_top1_acc": 0.738255033557047
+          },
+          {
+            "value": "airplane",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.4266666666666667,
+            "imagenet_top5_acc": 0.5333333333333333,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.64
+          },
+          {
+            "value": "table",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.4266666666666667,
+            "imagenet_top5_acc": 0.5466666666666666,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.5933333333333334
+          },
+          {
+            "value": "lamp",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.5466666666666666,
+            "imagenet_top5_acc": 0.6866666666666666,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.5466666666666666
+          },
+          {
+            "value": "helmet",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.43333333333333335,
+            "imagenet_top5_acc": 0.52,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.48
+          }
+        ],
+        "worst": [
+          {
+            "value": "telephone",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.006666666666666667,
+            "imagenet_top5_acc": 0.04,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.006666666666666667
+          },
+          {
+            "value": "bus",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.0,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "train",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.006666666666666667,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "tower",
+            "n_samples": 150,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.0,
+            "shapenet_evaluable": 150,
+            "shapenet_top1_acc": 0.0
+          },
+          {
+            "value": "earphone",
+            "n_samples": 50,
+            "imagenet_top1_acc": 0.0,
+            "imagenet_top5_acc": 0.06,
+            "shapenet_evaluable": 50,
+            "shapenet_top1_acc": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

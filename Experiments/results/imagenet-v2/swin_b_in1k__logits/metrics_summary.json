@@ -1,0 +1,249 @@
+{
+  "model_key": "swin_b_in1k__logits",
+  "model_name": "Swin-B-IN1K-LOGITS",
+  "generated_at": "2026-05-08T04:36:02.034635",
+  "metrics": {
+    "summary": {
+      "total_samples": 10000,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.7567,
+        "top5_accuracy": 0.9317,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 7567,
+        "top5_correct": 9317,
+        "ece": 0.04619231872558594,
+        "roc_auc": 0.8402009047983514
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 10000,
+      "top1_accuracy": 0.7567,
+      "top1_accuracy_ci": {
+        "lower": 0.7481,
+        "upper": 0.7645025,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.9317,
+      "top5_accuracy_ci": {
+        "lower": 0.9267,
+        "upper": 0.9368,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.24329999999999996,
+      "top5_error_rate": 0.06830000000000003,
+      "expected_calibration_error": 0.04619231872558594,
+      "roc_auc_misclassification": 0.8402009047983514,
+      "top_confused_pairs": [
+        {
+          "true_class": 68,
+          "predicted_class": 66,
+          "count": 8
+        },
+        {
+          "true_class": 231,
+          "predicted_class": 232,
+          "count": 7
+        },
+        {
+          "true_class": 278,
+          "predicted_class": 277,
+          "count": 7
+        },
+        {
+          "true_class": 504,
+          "predicted_class": 968,
+          "count": 6
+        },
+        {
+          "true_class": 620,
+          "predicted_class": 681,
+          "count": 6
+        },
+        {
+          "true_class": 782,
+          "predicted_class": 851,
+          "count": 6
+        },
+        {
+          "true_class": 852,
+          "predicted_class": 752,
+          "count": 6
+        },
+        {
+          "true_class": 198,
+          "predicted_class": 197,
+          "count": 5
+        },
+        {
+          "true_class": 218,
+          "predicted_class": 217,
+          "count": 5
+        },
+        {
+          "true_class": 250,
+          "predicted_class": 248,
+          "count": 5
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx         class_label  support  base_accuracy  overall_accuracy  precision  recall        f1  tp  fp  fn\n0            0               tench       10            NaN               1.0      1.000     1.0  1.000000  10   0   0\n9            9             ostrich       10            NaN               1.0      1.000     1.0  1.000000  10   0   0\n779        779          school_bus       10            NaN               1.0      1.000     1.0  1.000000  10   0   0\n22          22          bald_eagle       10            NaN               1.0      1.000     1.0  1.000000  10   0   0\n23          23             vulture       10            NaN               1.0      1.000     1.0  1.000000  10   0   0\n..         ...                 ...      ...            ...               ...        ...     ...       ...  ..  ..  ..\n620        620              laptop       10            NaN               0.1      0.250     0.1  0.142857   1   3   9\n231        231              collie       10            NaN               0.1      0.250     0.1  0.142857   1   3   9\n198        198  standard_schnauzer       10            NaN               0.1      0.200     0.1  0.133333   1   4   9\n497        497              church       10            NaN               0.1      0.125     0.1  0.111111   1   7   9\n664        664             monitor       10            NaN               0.0      0.000     0.0  0.000000   0  10  10\n\n[1000 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Fog": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Light Color (RGB)": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Material": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.7567,
+          "imagenet_top5_acc": 0.9317,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Camera Position": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Fog": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Light Color (RGB)": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Material": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Level": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

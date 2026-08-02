@@ -1,0 +1,249 @@
+{
+  "model_key": "resnet50__knn",
+  "model_name": "ResNet-50-KNN",
+  "generated_at": "2026-05-08T04:43:18.222586",
+  "metrics": {
+    "summary": {
+      "total_samples": 10000,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.5917,
+        "top5_accuracy": 0.7722,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 5917,
+        "top5_correct": 7722,
+        "ece": 0.044776299018412825,
+        "roc_auc": 0.87624345945511
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 10000,
+      "top1_accuracy": 0.5917,
+      "top1_accuracy_ci": {
+        "lower": 0.582,
+        "upper": 0.6012,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.7722,
+      "top5_accuracy_ci": {
+        "lower": 0.7644974999999999,
+        "upper": 0.7808025000000001,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.4083,
+      "top5_error_rate": 0.2278,
+      "expected_calibration_error": 0.044776299018412825,
+      "roc_auc_misclassification": 0.87624345945511,
+      "top_confused_pairs": [
+        {
+          "true_class": 524,
+          "predicted_class": 461,
+          "count": 8
+        },
+        {
+          "true_class": 278,
+          "predicted_class": 277,
+          "count": 7
+        },
+        {
+          "true_class": 435,
+          "predicted_class": 876,
+          "count": 7
+        },
+        {
+          "true_class": 472,
+          "predicted_class": 693,
+          "count": 7
+        },
+        {
+          "true_class": 546,
+          "predicted_class": 402,
+          "count": 7
+        },
+        {
+          "true_class": 987,
+          "predicted_class": 998,
+          "count": 7
+        },
+        {
+          "true_class": 231,
+          "predicted_class": 232,
+          "count": 6
+        },
+        {
+          "true_class": 196,
+          "predicted_class": 198,
+          "count": 5
+        },
+        {
+          "true_class": 204,
+          "predicted_class": 155,
+          "count": 5
+        },
+        {
+          "true_class": 250,
+          "predicted_class": 248,
+          "count": 5
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx            class_label  support  base_accuracy  overall_accuracy  precision  recall   f1  tp  fp  fn\n986        986  yellow_lady's_slipper       10            NaN               1.0        1.0     1.0  1.0  10   0   0\n88          88                  macaw       10            NaN               1.0        1.0     1.0  1.0  10   0   0\n100        100             black_swan       10            NaN               1.0        1.0     1.0  1.0  10   0   0\n640        640          manhole_cover       10            NaN               1.0        1.0     1.0  1.0  10   0   0\n322        322                ringlet       10            NaN               1.0        1.0     1.0  1.0  10   0   0\n..         ...                    ...      ...            ...               ...        ...     ...  ...  ..  ..  ..\n838        838              sunscreen       10            NaN               0.0        0.0     0.0  0.0   0   2  10\n861        861            toilet_seat       10            NaN               0.0        0.0     0.0  0.0   0   3  10\n790        790        shopping_basket       10            NaN               0.0        0.0     0.0  0.0   0   4  10\n204        204                  Lhasa       10            NaN               0.0        0.0     0.0  0.0   0   3  10\n754        754                  radio       10            NaN               0.0        0.0     0.0  0.0   0   0  10\n\n[1000 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Fog": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Light Color (RGB)": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Material": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.5917,
+          "imagenet_top5_acc": 0.7722,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Camera Position": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Fog": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Light Color (RGB)": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Material": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Level": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}

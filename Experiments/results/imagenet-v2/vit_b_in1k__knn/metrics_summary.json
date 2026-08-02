@@ -1,0 +1,249 @@
+{
+  "model_key": "vit_b_in1k__knn",
+  "model_name": "ViT-B-IN1K-KNN",
+  "generated_at": "2026-05-08T04:41:03.243105",
+  "metrics": {
+    "summary": {
+      "total_samples": 10000,
+      "base_samples": 0,
+      "imagenet": {
+        "top1_accuracy": 0.6521,
+        "top5_accuracy": 0.824,
+        "base_top1_accuracy": 0.0,
+        "base_top5_accuracy": 0.0,
+        "top1_correct": 6521,
+        "top5_correct": 8240,
+        "ece": 0.017593570799380537,
+        "roc_auc": 0.8696237274238019
+      },
+      "shapenet": {
+        "evaluable_samples": 0,
+        "base_evaluable_samples": 0,
+        "coverage_pct": 0.0,
+        "top1_accuracy": 0,
+        "base_top1_accuracy": 0.0,
+        "top1_correct": 0,
+        "ece": NaN,
+        "roc_auc": NaN
+      }
+    },
+    "imagenet": {
+      "n_samples": 10000,
+      "top1_accuracy": 0.6521,
+      "top1_accuracy_ci": {
+        "lower": 0.643095,
+        "upper": 0.661305,
+        "confidence": 0.95
+      },
+      "top5_accuracy": 0.824,
+      "top5_accuracy_ci": {
+        "lower": 0.8166,
+        "upper": 0.8313025,
+        "confidence": 0.95
+      },
+      "top1_error_rate": 0.3479,
+      "top5_error_rate": 0.17600000000000005,
+      "expected_calibration_error": 0.017593570799380537,
+      "roc_auc_misclassification": 0.8696237274238019,
+      "top_confused_pairs": [
+        {
+          "true_class": 278,
+          "predicted_class": 277,
+          "count": 9
+        },
+        {
+          "true_class": 231,
+          "predicted_class": 232,
+          "count": 7
+        },
+        {
+          "true_class": 312,
+          "predicted_class": 311,
+          "count": 7
+        },
+        {
+          "true_class": 987,
+          "predicted_class": 998,
+          "count": 7
+        },
+        {
+          "true_class": 240,
+          "predicted_class": 241,
+          "count": 6
+        },
+        {
+          "true_class": 429,
+          "predicted_class": 981,
+          "count": 6
+        },
+        {
+          "true_class": 472,
+          "predicted_class": 693,
+          "count": 6
+        },
+        {
+          "true_class": 623,
+          "predicted_class": 777,
+          "count": 6
+        },
+        {
+          "true_class": 639,
+          "predicted_class": 638,
+          "count": 6
+        },
+        {
+          "true_class": 667,
+          "predicted_class": 400,
+          "count": 6
+        }
+      ]
+    },
+    "shapenet": {
+      "n_samples": 0,
+      "top1_accuracy": 0.0,
+      "message": "No evaluable ShapeNet samples"
+    },
+    "per_class_imagenet": "     class_idx        class_label  support  base_accuracy  overall_accuracy  precision  recall        f1  tp  fp  fn\n261        261           keeshond       10            NaN               1.0   1.000000     1.0  1.000000  10   0   0\n293        293            cheetah       10            NaN               1.0   1.000000     1.0  1.000000  10   0   0\n323        323            monarch       10            NaN               1.0   1.000000     1.0  1.000000  10   0   0\n322        322            ringlet       10            NaN               1.0   1.000000     1.0  1.000000  10   0   0\n325        325  sulphur_butterfly       10            NaN               1.0   1.000000     1.0  1.000000  10   0   0\n..         ...                ...      ...            ...               ...        ...     ...       ...  ..  ..  ..\n650        650         microphone       10            NaN               0.1   0.090909     0.1  0.095238   1  10   9\n848        848        tape_player       10            NaN               0.1   0.090909     0.1  0.095238   1  10   9\n968        968                cup       10            NaN               0.0   0.000000     0.0  0.000000   0   4  10\n414        414           backpack       10            NaN               0.0   0.000000     0.0  0.000000   0   6  10\n911        911               wool       10            NaN               0.0   0.000000     0.0  0.000000   0   3  10\n\n[1000 rows x 11 columns]",
+    "per_class_shapenet": "Empty DataFrame\nColumns: []\nIndex: []"
+  },
+  "stratified_analysis": {
+    "per_column": {
+      "Camera Position": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Fog": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Light Color (RGB)": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Material": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Object": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "Level": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ],
+      "true_shapenet_superclass": [
+        {
+          "value": "<unmapped>",
+          "n_samples": 10000,
+          "imagenet_top1_acc": 0.6521,
+          "imagenet_top5_acc": 0.824,
+          "shapenet_evaluable": 0,
+          "shapenet_top1_acc": null
+        }
+      ]
+    },
+    "variance": {
+      "Camera Position": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Fog": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Light Color (RGB)": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Material": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Object": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "Level": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      },
+      "true_shapenet_superclass": {
+        "n_groups": 1,
+        "imagenet_top1_variance": 0.0,
+        "imagenet_top1_std": 0.0,
+        "imagenet_top1_range": 0.0,
+        "shapenet_top1_variance": null,
+        "shapenet_top1_std": null,
+        "shapenet_top1_range": null
+      }
+    },
+    "best_worst": {}
+  }
+}
