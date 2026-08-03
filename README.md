@@ -1,4 +1,4 @@
-# Evaluating the Robustness of Vision Foundation Models (VFMs) via UE5 Synthesis
+# Evaluating the Robustness of Vision Foundation Models on an ImageNet Class-Subset Using Photorealistic Images Synthesized in Unreal Engine
 
 This repository contains the evaluation framework, dataset metadata, and Unreal Engine 5 pipeline used to analyze the out-of-distribution (OOD) robustness of Vision Foundation Models (VFMs) as detailed in the thesis:
 
