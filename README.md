@@ -28,7 +28,7 @@ We introduce two novel synthetic benchmarks with perfect causal granularity:
 
 - DINOv2/v3 models exhibit superior OOD robustness compared to language-supervised (CLIP) or standard supervised (ResNet) models.
 - Top-down viewpoints represent a universal failure mode across all evaluated backbones.
-- Supervised fine-tuning often destroys the latent invariance of pre-trained backbones, making linear probing a more reliable metric for OOD robustness.
+- Supervised fine-tuning can destroy the latent invariance of pre-trained backbones, making linear probing a more reliable metric for OOD robustness.
 
 
 ## Citation
