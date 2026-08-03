@@ -54,56 +54,56 @@ VFM-Robustness-UE5/
 │   └── AssetList.txt.txt             # Inventory of ShapeNet assets used
 │
 ├── Experiments/
-│   ├── scripts/                      # Full Python evaluation framework
-│   │   ├── config.py                 # Model specs, dataset definitions & configuration
-│   │   ├── evaluate.py               # Primary CLI evaluation entrypoint
-│   │   ├── models.py                 # Model loading via timm & HuggingFace
-│   │   ├── data_loader.py            # PyTorch Dataset & DataLoader utilities
-│   │   ├── inference.py              # Classifier head inference engine
-│   │   ├── knn.py                    # Feature extraction & FAISS kNN evaluation
-│   │   ├── linear_probe.py           # Linear probe training & evaluation engine
-│   │   ├── metrics.py                # Classification & stratified metrics computation
-│   │   ├── analysis.py               # Stratified metadata factor analyzer
-│   │   ├── reporting.py              # HTML, Markdown, CSV & JSON report generators
-│   │   ├── equivariance.py           # Transition-vector equivariance analysis
-│   │   ├── explain.py                # Grad-CAM & segmentation-mask attribution
+│   ├── scripts/                              # Full Python evaluation framework
+│   │   ├── config.py                         # Model specs, dataset definitions & configuration
+│   │   ├── evaluate.py                       # Primary CLI evaluation entrypoint
+│   │   ├── models.py                         # Model loading via timm & HuggingFace
+│   │   ├── data_loader.py                    # PyTorch Dataset & DataLoader utilities
+│   │   ├── inference.py                      # Classifier head inference engine
+│   │   ├── knn.py                            # Feature extraction & FAISS kNN evaluation
+│   │   ├── linear_probe.py                   # Linear probe training & evaluation engine
+│   │   ├── metrics.py                        # Classification & stratified metrics computation
+│   │   ├── analysis.py                       # Stratified metadata factor analyzer
+│   │   ├── reporting.py                      # HTML, Markdown, CSV & JSON report generators
+│   │   ├── equivariance.py                   # Transition-vector equivariance analysis
+│   │   ├── explain.py                        # Grad-CAM & segmentation-mask attribution
 │   │   ├── aggregate_comparative_results.py  # Cross-dataset comparative aggregator
-│   │   ├── preprocess_metadata.py    # Metadata expansion & label mapping
+│   │   ├── preprocess_metadata.py            # Metadata expansion & label mapping
 │   │   ├── preprocess_external_datasets.py   # External benchmark preprocessing
-│   │   ├── preprocess_pug.py         # PUG-ImageNet specific preprocessing
-│   │   ├── run_all_evals.py          # Batch evaluation runner (Python)
-│   │   ├── run_all_evals.sh          # Batch evaluation runner (Shell)
-│   │   ├── csv_to_latex.py           # CSV → LaTeX table converter
-│   │   ├── generate_results_latex.py # Results → LaTeX report generator
-│   │   ├── plot_5_3_heatmap.py       # Factor × model heatmap plots
-│   │   ├── plot_5_3_scatter.py       # Factor × model scatter plots
-│   │   ├── plot_5_3_table.py         # Factor × model table plots
-│   │   ├── plot_5_6_curve_plot.py    # Accuracy-vs-factor curve plots
-│   │   ├── utils.py                  # Shared utility helpers
+│   │   ├── preprocess_pug.py                 # PUG-ImageNet specific preprocessing
+│   │   ├── run_all_evals.py                  # Batch evaluation runner (Python)
+│   │   ├── run_all_evals.sh                  # Batch evaluation runner (Shell)
+│   │   ├── csv_to_latex.py                   # CSV → LaTeX table converter
+│   │   ├── generate_results_latex.py         # Results → LaTeX report generator
+│   │   ├── plot_5_3_heatmap.py               # Factor × model heatmap plots
+│   │   ├── plot_5_3_scatter.py               # Factor × model scatter plots
+│   │   ├── plot_5_3_table.py                 # Factor × model table plots
+│   │   ├── plot_5_6_curve_plot.py            # Accuracy-vs-factor curve plots
+│   │   ├── utils.py                          # Shared utility helpers
 │   │   ├── tools/
-│   │   │   ├── calculate_averages.py # Stratified factor average accuracy calculator
-│   │   │   └── fix_csv_paths.py      # Relative path normalizer for metadata CSVs
-│   │   └── PREPROCESSING_README.md   # Metadata preprocessing guide
-│   ├── results/                      # Evaluated outputs (gitignored, generated at runtime)
+│   │   │   ├── calculate_averages.py         # Stratified factor average accuracy calculator
+│   │   │   └── fix_csv_paths.py              # Relative path normalizer for metadata CSVs
+│   │   └── PREPROCESSING_README.md           # Metadata preprocessing guide
+│   ├── results/                              # Evaluated outputs (gitignored, generated at runtime)
 │   │   ├── <dataset_name>/
-│   │   │   ├── <model_variant>/      # Per-model CSVs, JSON, HTML & Markdown reports
-│   │   │   └── comparative/          # Per-dataset comparative rankings & report
-│   │   ├── aggregate/                # Cross-dataset aggregated summaries
+│   │   │   ├── <model_variant>/              # Per-model CSVs, JSON, HTML & Markdown reports
+│   │   │   └── comparative/                  # Per-dataset comparative rankings & report
+│   │   ├── aggregate/                        # Cross-dataset aggregated summaries
 │   │   │   └── {KNN,LOGITS,LINEAR_PROBE}/
-│   │   └── _artifacts/               # Cached linear probe features & classifier heads
-│   ├── ShapeNet-ImageNet1k-Mapping-Indexed-subcategories4.json  # ShapeNet↔ImageNet taxonomy map
-│   ├── imagenet_class_index.txt      # ImageNet-1K class index
-│   ├── requirements.txt              # Python dependencies
-│   ├── README.md                     # Evaluation framework documentation
-│   └── LINEAR_PROBING_GUIDE.md       # Advanced linear probing guide
+│   │   └── _artifacts/                       # Cached linear probe features & classifier heads
+│   ├── ShapeNet-ImageNet1k-Mapping-Indexed-subcategories4.json   # ShapeNet↔ImageNet taxonomy map
+│   ├── imagenet_class_index.txt                                  # ImageNet-1K class index
+│   ├── requirements.txt                                          # Python dependencies
+│   ├── README.md                                                 # Evaluation framework documentation
+│   └── LINEAR_PROBING_GUIDE.md                                   # Advanced linear probing guide
 │
 ├── Unreal-Engine-Plugins/
-│   ├── MultiFactorDatasetRenderer/   # UE5 plugin: 5-factor procedural renderer
-│   ├── MultiColorDatasetRenderer/    # UE5 plugin: color-material procedural renderer
+│   ├── MultiFactorDatasetRenderer/             # UE5 plugin: 5-factor procedural renderer
+│   ├── MultiColorDatasetRenderer/              # UE5 plugin: color-material procedural renderer
 │   └── UE5 Dataset Generator Plugin Guide.pdf  # Plugin usage guide
 │
 ├── LICENSE
-└── README.md                         # This file
+└── README.md                                   # This file
 ```
 
 ---
