@@ -82,7 +82,8 @@ VFM-Robustness-UE5/
 │   │   ├── utils.py                          # Shared utility helpers
 │   │   ├── tools/
 │   │   │   ├── calculate_averages.py         # Stratified factor average accuracy calculator
-│   │   │   └── fix_csv_paths.py              # Relative path normalizer for metadata CSVs
+│   │   │   ├── fix_csv_paths.py              # Relative path normalizer for metadata CSVs
+│   │   │   └── test_exact_knn.py             # Benchmark exact vs. IVF FAISS k-NN search
 │   │   └── PREPROCESSING_README.md           # Metadata preprocessing guide
 │   ├── results/                              # Evaluated outputs (gitignored, generated at runtime)
 │   │   ├── <dataset_name>/
