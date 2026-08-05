@@ -51,7 +51,7 @@ VFM-Robustness-UE5/
 │   │   ├── Metadata.csv              # Core image index with color/class labels
 │   │   └── Metadata_Expanded.csv     # Extended index with ImageNet label mappings
 │   ├── own_textures/                 # Custom PBR textures used in rendering
-│   └── AssetList.txt.txt             # Inventory of ShapeNet assets used
+│   └── AssetList.txt             # Inventory of ShapeNet assets used
 │
 ├── Experiments/
 │   ├── scripts/                              # Full Python evaluation framework
