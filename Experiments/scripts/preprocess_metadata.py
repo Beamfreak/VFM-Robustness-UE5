@@ -139,8 +139,8 @@ def inject_missing_metadata(metadata: pd.DataFrame, dataset_dir: Path) -> pd.Dat
             elif var_dir == "Fog":
                 base_props['Fog'] = 'true' if val_dir.lower() == 'withfog' else 'false'
             
-            # Construct the identical format path for the 'Image' column
-            img_url_path = f"../../../../../../Users/Stud/Documents/Unreal Projects/Dataset_Renderer/Dataset/{var_dir}/{val_dir}/{filename}"
+            # Construct the clean relative format path for the 'Image' column
+            img_url_path = f"{var_dir}/{val_dir}/{filename}"
             mask_url_path = img_url_path.replace('.png', '_mask.png')
             
             new_rows.append({
